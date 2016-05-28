@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html leng="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Титул</title>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><!--Реми Шарп. Поддержка HTML5-->
+</head>
+<body>
+  <div class="site-wrapper">
+  <div class="site-wrapper-inner">
+  <div class="cover-container">
+  <div class="masthead clearfix">
+  <div class="inner">
+    <h3 class="masthead-brand">Cover</h3>
+    <ul class="nav masthead-nav">
+      <li class="active"><a href="#page0" data-toggle="tab">Главная</a></li>
+      <li class=""><a href="#page1" data-toggle="tab">Страница 1</a></li>
+      <li class=""><a href="#page2" data-toggle="tab">Страница 2</a></li>
+      <li class=""><a href="#page3" data-toggle="tab">Страница 3</a></li>
+    </ul>
+  </div>
+  </div>
+  </div>
+
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="page0">
+      <header class="container center-block">
+        <h1>Заголовок 1</h1>
+        <button class="btn btn-default btn-lg" type="submit">Кнопка</button>
+      </header>
+    </div><!-- Конец первой страницы-->
+  
+    <div class="tab-pane fade cover-container" id="page1">
+      <div class="panel panel-success ">
+        <div class="panel-heading">Заголовок <span class="label label-success">Класс</span></div>
+        <div class="panel-body">
+        Контент 1
+        </div>
+      </div>
+    </div><!-- Конец второй страницы-->
+    <div class="tab-pane fade cover-container" id="page2">
+      <div class="panel panel-success">
+        <div class="panel-heading">Рекомендуемая литература <span class="label label-success">10 a</span></div>
+        <div class="panel-body">
+        
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="http://militera.lib.ru/0/stamp.gif" alt="Начальная военная подготовка">
+                <div class="caption">
+                  <h3>Начальная военная подготовка</h3>
+                  <p>Учебное пособие</p>
+                  <a href="http://militera.lib.ru/manuals/0/pdf/up_nvp01.pdf" class="btn btn-success" role="button">Скачать</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="http://militera.lib.ru/0/stamp.gif" alt="...">
+                <div class="caption">
+                  <h3>Начальная военная подготовка</h3>
+                  <p>Учебное пособие</p>
+                  <a href="http://militera.lib.ru/manuals/0/pdf/up_nvp01.pdf" class="btn btn-success" role="button">Скачать</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="http://militera.lib.ru/0/stamp.gif" alt="...">
+                <div class="caption">
+                  <h3>Начальная военная подготовка</h3>
+                  <p>Учебное пособие</p>
+                  <a href="http://militera.lib.ru/manuals/0/pdf/up_nvp01.pdf" class="btn btn-success" role="button">Скачать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!--panel-body-->
+      </div>
+    </div><!-- Конец третьей страницы-->
+    <div class="tab-pane fade cover-container" id="page3">
+      <div class="panel panel-success">
+        <div class="panel-heading">Заголовок </div>
+        
+        <img src="img_leto.jpg" height="100%" width="100%">
+        
+      </div>
+    </div><!-- Конец четвертой страницы-->
+  
+  </div>
+
+  <footer class="inner mainfoot">
+    <p>Copyright © <time datetime="2016-05-22">22 Мая 2016</time> Федоров Никита</p>
+  </footer>
+</div>
+  </div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+</body>
+</html>
+<style>
+  .panel{
+    opacity: 0.9;
+  }
+  .panel-success{
+  	border-radius: 0;
+  }
+  .tab-pane {margin-top: 100px;}
+</style>
