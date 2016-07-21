@@ -381,7 +381,7 @@ textarea {
 [class*='col-'] {
   float: left;
   min-height: 1px;
-  padding-right: 20px;
+  padding-right: 0px;
   /* column-space */ }
 
 [class*='col-'] [class*='col-']:last-child {
@@ -538,6 +538,10 @@ textarea {
     display: none !important;
     width: 0;
     height: 0; } }
+@media (min-width: 1800px) {
+  * {
+    font-size: 50px !important;
+    line-height: 2.5; } }
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2365,6 +2369,26 @@ textarea {
   .slider #prev.disabled {
     opacity: 0.2; }
 
+.appstore {
+  display: block;
+  background: url(/images/app/appstore-w.png) no-repeat !important;
+  width: 146px;
+  height: 50px;
+  border-radius: 4px; }
+  .appstore:hover {
+    background-color: black !important;
+    background-size: 100%; }
+
+.googleplay {
+  display: block;
+  background: url(/images/app/googleplay-w.png) no-repeat !important;
+  width: 146px;
+  height: 50px;
+  border-radius: 4px; }
+  .googleplay:hover {
+    background-color: black !important;
+    background-size: 100%; }
+
 .slider-h .col-16-16 {
   padding: 0 !important; }
 .slider-h a {
@@ -2396,9 +2420,10 @@ textarea {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin: 85px auto;
+  margin: 0px auto;
   position: relative; }
 .slider-h #dates {
+  margin: 100px 0;
   height: 40px;
   overflow: hidden; }
 .slider-h #dates li {
@@ -2417,13 +2442,16 @@ textarea {
     width: 100vw;
     list-style: none;
     float: left; }
+    .slider-h #issues li .appstore {
+      margin: 10px 0; }
     .slider-h #issues li h1 {
       font-size: 30px;
       font-family: "DINPro";
       color: white;
       text-transform: uppercase;
       line-height: 1.333;
-      text-align: left; }
+      text-align: left;
+      letter-spacing: 1px; }
     .slider-h #issues li h2 {
       font-size: 16px;
       font-family: "Lato";
@@ -2436,10 +2464,44 @@ textarea {
       color: #cab8bc;
       line-height: 1.625;
       text-align: left; }
+    .slider-h #issues li .li {
+      padding: 10px;
+      padding-left: 25px; }
+      .slider-h #issues li .li:before {
+        content: "\2022";
+        padding-right: 10px; }
     .slider-h #issues li img {
       float: left;
       background: transparent;
-      zoom: 1; }
+      zoom: 1;
+      width: 100%; }
+    .slider-h #issues li .btn-arrow {
+      margin: 40px 0 20px 0;
+      width: 100%; }
+    .slider-h #issues li .share-icon {
+      text-align: center; }
+      .slider-h #issues li .share-icon:before {
+        content: url(/images/sprites/share.png);
+        position: relative;
+        top: 150px;
+        left: -150px;
+        z-index: 0; }
+      .slider-h #issues li .share-icon div {
+        width: 25px;
+        height: 25px;
+        border: 2px solid #c8c7c7;
+        border-radius: 100%;
+        padding: 5px;
+        font-size: 13px;
+        line-height: 1.2;
+        float: left;
+        margin: 2px; }
+        .slider-h #issues li .share-icon div a:hover {
+          color: #ee6628; }
+        .slider-h #issues li .share-icon div a:active {
+          color: #ee6628; }
+        .slider-h #issues li .share-icon div a i {
+          zoom: 1.8; }
 .slider-h #grad_left,
 .slider-h #grad_right {
   width: 100px;
@@ -2457,20 +2519,19 @@ textarea {
   position: absolute;
   top: 0;
   font-size: 70px;
-  top: 170px;
+  top: 50px;
   width: 22px;
   height: 38px;
-  background-position: 0 0;
+  zoom: 1.8;
   background-repeat: no-repeat;
   text-indent: -9999px;
   overflow: hidden; }
-.slider-h #next:hover,
-.slider-h #prev:hover {
-  background-position: 0 -76px; }
 .slider-h #next {
+  background-position: 0 +6px;
   right: 0;
   background-image: url(/images/slider/slider-h-next.png); }
 .slider-h #prev {
+  background-position: 0 +9px;
   left: 0;
   background-image: url(/images/slider/slider-h-next.png);
   -webkit-transform: rotate(180deg);
@@ -2828,28 +2889,9 @@ textarea:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(238, 102, 40, 0.6) !important; }
 
 .s-h {
-  background-color: #792539;
-  box-shadow: inset 0 0 268px; }
-
-.slider-h .issues h1 {
-  font-size: 30px;
-  font-family: "DINPro";
-  color: white;
-  text-transform: uppercase;
-  line-height: 1.333;
-  text-align: left; }
-.slider-h .issues h2 {
-  font-size: 16px;
-  font-family: "Lato";
-  color: #cab8bc;
-  line-height: 1.625;
-  text-align: left; }
-.slider-h .issues p {
-  font-size: 16px;
-  font-family: "Lato";
-  color: #cab8bc;
-  line-height: 1.625;
-  text-align: left; }
+  background-image: -moz-radial-gradient(50% 50%, circle closest-side, #d44178 0%, #792539 0%, black 200%);
+  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #d44178 0%, #792539 0%, black 200%);
+  background-image: -ms-radial-gradient(50% 50%, circle closest-side, #d44178 0%, #792539 0%, black 200%); }
 
 .btn {
   background: none;
