@@ -389,7 +389,6 @@ textarea {
 
 .grid {
   width: 100%;
-  min-width: 748px;
   /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
   margin: 0 auto;
   overflow: inherit; }
@@ -470,7 +469,7 @@ textarea {
 .push-16-16 {
   margin-left: 100%; }
 
-@media handheld, only screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .grid {
     width: 100%;
     min-width: 0;
@@ -489,15 +488,127 @@ textarea {
     padding-right: 0px;
     /* column-space */ }
 
-  [class*='col-'] [class*='col-'] {
-    padding-right: 0; }
+  [class*='push-'] {
+    margin-left: auto;
+    float: none;
+    /* column-space */ }
+
+  /* Mobile Layout */
+  [class*='tab-col-'] {
+    float: left;
+    padding: 15px;
+    /* column-space */
+    padding-bottom: 0; }
+
+  .tab-col-1-16 {
+    width: 6.25%; }
+  .tab-col-2-16 {
+    width: 12.5%; }
+  .tab-col-3-16 {
+    width: 18.75%; }
+  .tab-col-4-16 {
+    width: 25%; }
+  .tab-col-5-16 {
+    width: 31.25%; }
+  .tab-col-6-16 {
+    width: 37.5%; }
+  .tab-col-7-16 {
+    width: 43.75%; }
+  .tab-col-8-16 {
+    width: 50%; }
+  .tab-col-9-16 {
+    width: 56.25%; }
+  .tab-col-10-16 {
+    width: 62.5%; }
+  .tab-col-11-16 {
+    width: 68.75%; }
+  .tab-col-12-16 {
+    width: 75%; }
+  .tab-col-13-16 {
+    width: 81.25%; }
+  .tab-col-14-16 {
+    width: 87.5%; }
+  .tab-col-15-16 {
+    width: 93.75%; }
+  .tab-col-16-16 {
+    width: 100%; }
+
+  /* Pushing blocks */
+  .t-push-1-16 {
+    margin-left: 6.25%; }
+  .t-push-2-16 {
+    margin-left: 12.5%; }
+  .t-push-3-16 {
+    margin-left: 18.75%; }
+  .t-push-4-16 {
+    margin-left: 25%; }
+  .t-push-5-16 {
+    margin-left: 31.25%; }
+  .t-push-6-16 {
+    margin-left: 37.5%; }
+  .t-push-7-16 {
+    margin-left: 43.75%; }
+  .t-push-8-16 {
+    margin-left: 50%; }
+  .t-push-9-16 {
+    margin-left: 56.25%; }
+  .t-push-10-16 {
+    margin-left: 62.5%; }
+  .t-push-11-16 {
+    margin-left: 68.75%; }
+  .t-push-12-16 {
+    margin-left: 75%; }
+  .t-push-13-16 {
+    margin-left: 81.25%; }
+  .t-push-14-16 {
+    margin-left: 87.5%; }
+  .t-push-15-16 {
+    margin-left: 93.75%; }
+  .t-push-16-16 {
+    margin-left: 100%; }
+
+  .hide-on-tab {
+    display: none !important;
+    width: 0;
+    height: 0; } }
+@media (max-width: 480px) {
+  .down {
+    position: absolute;
+    bottom: 215px;
+    left: -16px;
+    width: 87% !important;
+    margin: 35px !important; }
+
+  .grid {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0px;
+    /* grid-space to left */
+    padding-right: 0px;
+    /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */ }
+
+  [class*='tab-col-'] {
+    width: auto;
+    float: none;
+    margin: 0 0;
+    padding-left: 0;
+    padding-right: 0px;
+    /* column-space */ }
+
+  [class*='t-push-'] {
+    margin-left: auto;
+    float: none;
+    /* column-space */ }
 
   /* Mobile Layout */
   [class*='mobile-col-'] {
-    float: left;
-    margin: 0 0 10px;
-    padding-left: 0;
-    padding-right: 10px;
+    float: none;
+    margin: 0 0 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 20px;
     /* column-space */
     padding-bottom: 0; }
 
@@ -533,6 +644,10 @@ textarea {
     width: 93.75%; }
   .mobile-col-16-16 {
     width: 100%; }
+    .mobile-col-16-16:after {
+      content: "";
+      display: table;
+      clear: both; }
 
   .hide-on-mobile {
     display: none !important;
@@ -2372,8 +2487,10 @@ textarea {
 .appstore {
   display: block;
   background: url(/images/app/appstore-w.png) no-repeat !important;
+  background-size: 100% !important;
+  background-attachment: local;
   width: 146px;
-  height: 50px;
+  height: 51.1px;
   border-radius: 4px; }
   .appstore:hover {
     background-color: black !important;
@@ -2442,8 +2559,8 @@ textarea {
     width: 100vw;
     list-style: none;
     float: left; }
-    .slider-h #issues li .appstore {
-      margin: 10px 0; }
+    .slider-h #issues li .appstore, .slider-h #issues li .googleplay {
+      margin: 10px auto; }
     .slider-h #issues li h1 {
       font-size: 30px;
       font-family: "DINPro";
@@ -2734,6 +2851,12 @@ figure {
   .nav .push-2-16 {
     margin-left: 0;
     width: 25%; } }
+@media (max-width: 900px) {
+  nav .share {
+    display: none; }
+
+  nav li.centr {
+    padding: 30px 15px; } }
 @media (max-width: 860px) {
   .nav .hide-on-mobile {
     display: none; }

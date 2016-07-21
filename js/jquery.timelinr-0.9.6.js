@@ -52,12 +52,12 @@ jQuery.fn.timelinr = function(options){
 			// set positions!
 			if(settings.orientation == 'horizontal') {
 				$(settings.issuesDiv).width(widthIssue*howManyIssues);
-				$(settings.datesDiv).width(widthDate*howManyDates).css('marginLeft',widthContainer/2-widthDate/2);
+// defalut	$(settings.datesDiv).width(widthDate*howManyDates).css('marginLeft',widthContainer/2-widthDate/2);
+        $(settings.datesDiv).css('marginLeft',widthContainer/2-widthDate/2);
 				var defaultPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
 			} else if(settings.orientation == 'vertical') {
 				$(settings.issuesDiv).height(heightIssue*howManyIssues);
 // defalut	$(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/2-heightDate/2);
-        $(settings.datesDiv).height(heightDate*howManyDates);
 				var defaultPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
 			}
 
