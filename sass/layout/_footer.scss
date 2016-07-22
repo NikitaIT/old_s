@@ -1,0 +1,27 @@
+/*
+*
+*                       НЕ ТРОГАТЬ
+*
+*/
+
+$grey-102: rgb(102, 102, 102);
+$black-13: rgb(13, 13, 13);
+$light-blue: rgb(0, 137, 207);
+.footer {
+  background-color: rgb(0, 0, 0);
+  padding: 20px 0px; // 0px не менять
+  /*footer вниз страницы*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  //height: $footer-height; не ставить
+  /*footer вниз страницы*/
+  p.copyright {
+    text-align: center;
+    font-size: 12px;
+    font-family: "Lato";
+    color: rgb(158, 157, 157);
+    line-height: 1.5;
+  }
+}

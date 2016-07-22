@@ -1,0 +1,45 @@
+$padding-normal: 7px;
+$margin-normal: 20px;
+.btn {
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 2px 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  &-default {
+    height: 42px;
+    border-radius: 22px;
+    padding: 5px 25px 5px 25px;
+    color: white;
+    margin: 10px 15px;
+  }
+  &:hover {
+    background-color: rgb(155, 73, 73);
+  }
+  &-normal {
+    padding: $padding-normal;
+    margin: $margin-normal;
+  }
+  &-small {
+    padding: $padding-normal/2;
+    margin: $margin-normal/2;
+  }
+  &-arrow {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(238, 102, 40);
+    border-radius: 12px;
+    background-color: rgba(208, 54, 92, 0);
+    color: rgb(238, 102, 40);
+    padding: 5px 10px 5px 10px;
+    &:hover {
+      border-color: rgb(202, 184, 188);
+      color: rgb(202, 184, 188);
+      text-decoration: none;
+    }
+  }
+}

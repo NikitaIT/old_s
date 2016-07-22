@@ -1,0 +1,229 @@
+$appstore-media-width:146px;
+.appstore {
+  display: block;
+  background: url(/images/app/appstore-w.png) no-repeat!important;
+  background-size: 100% !important;
+  background-attachment:local;
+  width: $appstore-media-width;
+  height: $appstore-media-width*0.35;
+  border-radius: 4px;
+  &:hover {
+    background-color: black !important;
+    background-size: 100%;
+  }
+}
+
+.googleplay {
+  display: block;
+  background: url(/images/app/googleplay-w.png) no-repeat !important;
+  width: 146px;
+  height: 50px;
+  border-radius: 4px;
+  &:hover {
+    background-color: black !important;
+    background-size: 100%;
+  }
+}
+
+.slider-h {
+  .col-16-16 {
+    padding: 0 !important;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    //    -webkit-transition: 0.5s;
+    //    -moz-transition: 0.5s;
+    //    -o-transition: 0.5s;
+    //    -ms-transition: 0.5s;
+    //    transition: 0.5s;
+  }
+  a:hover,
+  a.selected {
+    border-color: rgb(238, 102, 40);
+    color: rgb(238, 102, 40);
+    text-decoration: none;
+    background: none;
+  }
+  h1,
+  h2,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+    color: #ccc;
+    text-shadow: #000 1px 1px 2px;
+    margin-bottom: 5px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  .sociales {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #timeline {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+  }
+  #dates {
+    margin: 100px 0;
+    height: 40px;
+    overflow: hidden;
+  }
+  #dates li {
+    list-style: none;
+    float: left;
+    //    width: 200px;//длинна кнопки с отступом
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+  }
+  #dates a {
+    line-height: 38px;
+    padding-bottom: 10px;
+  }
+  #issues {
+    width: 100vw;
+    overflow: hidden;
+    li {
+      width: 100vw;
+      list-style: none;
+      float: left;
+      .appstore,.googleplay {
+        margin: 10px auto;
+      }
+      h1 {
+        font-size: 30px;
+        font-family: "DINPro";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.333;
+        text-align: left;
+        letter-spacing: 1px;
+      }
+      h2 {
+        font-size: 16px;
+        font-family: "Lato";
+        color: rgb(202, 184, 188);
+        line-height: 1.625;
+        text-align: left;
+      }
+      p {
+        font-size: 16px;
+        font-family: "Lato";
+        color: rgb(202, 184, 188);
+        line-height: 1.625;
+        text-align: left;
+      }
+      .li {
+        padding: 10px;
+        padding-left: 25px;
+        &:before {
+          content: "\2022";
+          padding-right: 10px;
+        }
+      }
+      img {
+        float: left;
+        background: transparent;
+        zoom: 1;
+        width:100%;
+      }
+      .btn-arrow {
+        margin: 40px 0 20px 0;
+        width: 100% //          телефон
+        //          position: absolute;
+        //          bottom: 0;
+      }
+      .share-icon {
+        text-align: center;
+        &:before {
+          content: url(/images/sprites/share.png);
+          position: relative;
+          top: 150px;
+          left: -150px;
+          z-index: 0;
+        }
+        div {
+          width: 25px;
+          height: 25px;
+          border: 2px solid #c8c7c7;
+          border-radius: 100%;
+          padding: 5px;
+          font-size: 13px;
+          line-height: 1.2;
+          float: left;
+          margin: 2px;
+          a {
+            &:hover {
+              color: rgb(238, 102, 40);
+            }
+            &:active {
+              color: rgb(238, 102, 40);
+            }
+            i {
+              zoom: 1.8;
+            }
+          }
+        }
+      }
+    }
+  }
+  #grad_left,
+  #grad_right {
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+  }
+  #grad_left {
+    left: 0;
+    background: url('../images/grad_left.png') repeat-y;
+  }
+  #grad_right {
+    right: 0;
+    background: url('../images/grad_right.png') repeat-y;
+  }
+  #next,
+  #prev {
+    position: absolute;
+    top: 0;
+    font-size: 70px;
+    top: 50px;
+    width: 22px;
+    height: 38px;
+    zoom:1.8;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+  #next:hover,
+  #prev:hover {
+  }
+  #next {
+    background-position: 0 +6px;
+    right: 0;
+    background-image: url(/images/slider/slider-h-next.png);
+  }
+  #prev {
+    background-position: 0 +9px;
+    left: 0;
+    background-image: url(/images/slider/slider-h-next.png);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  #next.disabled,
+  #prev.disabled {
+    opacity: 0.2;
+  }
+}

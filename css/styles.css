@@ -2368,7 +2368,7 @@ textarea {
   content: "\f23a"; }
 
 .slider {
-  height: 100vh;
+  height: 43.47826vw;
   overflow: hidden !important; }
   .slider .col-16-16 {
     padding: 0 !important; }
@@ -2388,7 +2388,7 @@ textarea {
     color: white;
     margin-bottom: 5px;
     position: absolute;
-    margin-top: 50vh;
+    margin-top: 21.73913vw;
     margin-left: 25%;
     margin-right: 25%;
     left: 0;
@@ -2406,8 +2406,8 @@ textarea {
   .slider #dates {
     position: absolute;
     width: 100px;
-    height: 100vh;
-    margin-top: 50vh;
+    height: 43.47826vw;
+    margin-top: 21.73913vw;
     overflow: hidden;
     z-index: 100; }
   .slider #dates li {
@@ -2415,7 +2415,8 @@ textarea {
     width: 30px;
     height: 30px;
     line-height: 10px;
-    font-size: 24px; }
+    font-size: 24px;
+    margin: 0 auto; }
   .slider #dates a {
     line-height: 38px;
     padding-bottom: 10px;
@@ -2425,25 +2426,28 @@ textarea {
     background: url(/images/slider/dot-select.png) 0px center no-repeat; }
   .slider #issues {
     width: 100vw;
-    height: 600px;
+    height: 43.47826vw;
     overflow: hidden;
     float: left; }
   .slider #issues li {
     width: 100vw;
-    height: 100vh;
+    height: 43.47826vw;
     list-style: none; }
   .slider #issues li img {
     top: 0;
     left: 0;
     zoom: 1;
     width: 100%;
-    height: 100vh; }
+    height: 43.47826vw; }
   .slider #issues li h1 {
     color: white;
     font-size: 48px;
     text-align: center;
     text-shadow: #000 1px 1px 2px; }
   .slider #issues li p {
+    position: absolute;
+    width: 0;
+    height: 0;
     font-size: 14px;
     margin: 10px 20px;
     font-weight: normal;
@@ -2452,7 +2456,7 @@ textarea {
   .slider #grad_top,
   .slider #grad_bottom {
     width: 500px;
-    height: 80px;
+    height: 0px;
     position: absolute; }
   .slider #grad_top {
     top: 0;
@@ -2477,31 +2481,48 @@ textarea {
   .slider #next {
     top: 0;
     background-image: url(/images/slider/slider-next.png);
-    margin-top: 95vh; }
+    margin-top: 41.30435vw; }
   .slider #prev {
     top: 0; }
   .slider #next.disabled,
   .slider #prev.disabled {
     opacity: 0.2; }
 
-@media screen and (max-width: 768px) {
-  .slider #issues li img {
-    width: auto;
-    margin-left: -30%; } }
-@media screen and (max-width: 468px) {
-  .slider #issues li img {
-    width: auto;
-    margin-left: -50%; }
+@media screen and (min-width: 1440px) {
   .slider #issues li h1 {
-    width: 20%;
-    text-align: center;
-    color: white;
-    margin-bottom: 5px;
-    position: absolute;
-    font-size: 30px;
-    margin-top: 40vh;
-    margin-left: 15%;
-    margin-right: 15%; } }
+    font-size: 70px; } }
+@media screen and (max-width: 1440px) {
+  .slider #issues li h1 {
+    font-size: 48px; } }
+@media screen and (max-width: 1024px) {
+  .slider #issues li h1 {
+    font-size: 35px; } }
+@media screen and (max-width: 768px) {
+  .slider #issues li h1 {
+    font-size: 18px; } }
+@media screen and (max-width: 468px) {
+  .slider {
+    height: 468px; }
+    .slider #dates {
+      height: 468px;
+      margin-top: 234px; }
+    .slider #issues {
+      height: 468px; }
+      .slider #issues li {
+        height: 468px; }
+        .slider #issues li img {
+          height: 468px;
+          width: auto;
+          zoom: 1.3; }
+        .slider #issues li h1 {
+          font-size: 28px;
+          margin-top: 234px;
+          text-align: left; }
+    .slider #next {
+      margin-top: 444.6px; } }
+@media screen and (max-width: 344) {
+  .slider #issues li h1 {
+    font-size: 20px; } }
 .appstore {
   display: block;
   background: url(/images/app/appstore-w.png) no-repeat !important;

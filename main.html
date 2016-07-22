@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/logo.png">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>
+    $(function () {
+      var pull = $('#pull');
+      menu = $('nav ul');
+      menuHeight = menu.height();
+      $(pull).on('click', function (e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+      $(window).resize(function () {
+        var w = $(window).width();
+        if (w > 320 && menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+      });
+    });
+  </script>
+  <script src="js/jquery.timelinr-0.9.6.js"></script>
+</head>
+
+<body>
+  <div class="wrapper s-h">
+    <!--header start!-->
+    <header class="header" name="home">
+      <nav class="nav clearfix">
+        <ul class="clearfix">
+          <figure class="push-2-16 col-2-16 header-logo left tab-col-4-16">
+            <a href="http://trendico.mkoreshkov.ru"> <img src="/images/Background/logo.png" alt=""> </a>
+          </figure>
+          <div class="col-8-16 tab-col-12-16">
+            <li class="centr"><a href="#">О нас</a></li>
+            <li class="centr"><a href="#">Приложения</a></li>
+            <li class="centr"><a href="#">Контакты</a></li>
+          </div>
+          <div class="col-4-16 hide-on-tab nav-right share">
+            <li class="right"><a href="#"><i class="fa fa-vk"></i></a></li>
+            <li class="right"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="right"><a href="#"><i class="fa fa-twitter"></i></a></li>
+          </div>
+        </ul>
+        <a href="#" id="pull"><img src="/images/Background/logo.png" alt=""></a>
+      </nav>
+    </header>
+    <!--header end!-->
+    <!--content start-->
+    <main class="page-content">
+      <!--Встраеваемый контент начало-->
+      <section class="grid slider-h">
+        <script>
+          $(function () {
+            $().timelinr({
+              arrowKeys: 'true'
+              , startAt: 3, 
+              autoPlay: 'true',
+              autoPlayPause: 10000
+            })
+          });
+        </script>
+        <div class="col-16-16">
+          <div id="timeline">
+            <div class="">
+              <ul id="dates">
+                <li><a class="btn btn-default" href="#1" class="selected">sadfasasdf</a></li>
+                <li><a class="btn btn-default" href="#2">adsfadsfasadfasasdf</a></li>
+                <li><a class="btn btn-default" href="#3">[eqyz]</a></li>
+                <li><a class="btn btn-default" href="#4">[adsfadsfasadfasasdf]</a></li>
+                <li><a class="btn btn-default" href="#5">[eqyzeqyz]</a></li>
+                <li><a class="btn btn-default" href="#6">[eqyz]</a></li>
+                <li><a class="btn btn-default" href="#7">[adsfadsfasadfasasdf]</a></li>
+              </ul>
+            </div>
+            <ul id="issues">
+              <li id="1" class="issues-elem">
+                <div class="grid">
+                  <div class="issues-content--info push-2-16 col-2-16 tab-col-6-16 mobile-col-16-16">
+                    <h1>Онлайн кинотеатр</h1>
+                    <p>Платформы:</p>
+                    <p class="li">iPad</p>
+                    <p class="li">Android</p>
+                    <a href="#" class="appstore"></a>
+                    <a class="googleplay"></a>
+                    <button class="btn btn-arrow down">&larr; Назад к iphone</button>
+                  </div>
+                  <div class="push-1-16 col-5-16 tab-col-10-16 mobile-col-16-16"> <img width="100%" src="/images/app/tele1.png" /> </div>
+                  <div class="push-1-16 col-3-16 t-push-6-16 tab-col-10-16 mobile-col-16-16">
+                    <p>Бесплатное, простое и быстрое приложение для просмотра популярных фильмов, мультфильмов, сериалов и телепрограмм с портала NOW.ru на вашем устройстве. Без регистрации, без оплаты, без подписки, только выбор фильма и просмотр. </p>
+                    <div class="share-icon mobile-col-16-16">
+                      <p>Понравилось</p>
+                      <p>приложение?</p>
+                      <p> Расскажите друзьям</p>
+                      <div class=""><a href="#"><i class="fa fa-vk"></i></a></div>
+                      <div class=""><a href="#"><i class="fa fa-facebook"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="2" class="issues-elem">
+                <div class="grid">
+                  <div class="issues-content--info push-2-16 col-2-16 tab-col-6-16 mobile-col-16-16">
+                    <h1>Онлайн кинотеатр</h1>
+                    <p>Платформы:</p>
+                    <p class="li">iPad</p>
+                    <p class="li">Android</p>
+                    <a href="#" class="appstore"></a>
+                    <a class="googleplay"></a>
+                    <button class="btn btn-arrow down">&larr; Назад к iphone</button>
+                  </div>
+                  <div class="push-1-16 col-5-16 tab-col-10-16 mobile-col-16-16"> <img width="100%" src="/images/app/tele2.png" /> </div>
+                  <div class="push-1-16 col-3-16 t-push-6-16 tab-col-10-16 mobile-col-16-16">
+                    <p>Бесплатное, простое и быстрое приложение для просмотра популярных фильмов, мультфильмов, сериалов и телепрограмм с портала NOW.ru на вашем устройстве. Без регистрации, без оплаты, без подписки, только выбор фильма и просмотр. </p>
+                    <div class="share-icon mobile-col-16-16">
+                      <p>Понравилось</p>
+                      <p>приложение?</p>
+                      <p> Расскажите друзьям</p>
+                      <div class=""><a href="#"><i class="fa fa-vk"></i></a></div>
+                      <div class=""><a href="#"><i class="fa fa-facebook"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="3" class="issues-elem">
+                <div class="grid">
+                  <div class="issues-content--info push-2-16 col-2-16 tab-col-6-16 mobile-col-16-16">
+                    <h1>Онлайн кинотеатр</h1>
+                    <p>Платформы:</p>
+                    <p class="li">iPad</p>
+                    <p class="li">Android</p>
+                    <a href="#" class="appstore"></a>
+                    <a class="googleplay"></a>
+                    <button class="btn btn-arrow down">&larr; Назад к iphone</button>
+                  </div>
+                  <div class="push-1-16 col-5-16 tab-col-10-16 mobile-col-16-16"> <img width="100%" src="/images/app/tele3.png" /> </div>
+                  <div class="push-1-16 col-3-16 t-push-6-16 tab-col-10-16 mobile-col-16-16">
+                    <p>Бесплатное, простое и быстрое приложение для просмотра популярных фильмов, мультфильмов, сериалов и телепрограмм с портала NOW.ru на вашем устройстве. Без регистрации, без оплаты, без подписки, только выбор фильма и просмотр. </p>
+                    <div class="share-icon mobile-col-16-16">
+                      <p>Понравилось</p>
+                      <p>приложение?</p>
+                      <p> Расскажите друзьям</p>
+                      <div class=""><a href="#"><i class="fa fa-vk"></i></a></div>
+                      <div class=""><a href="#"><i class="fa fa-facebook"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="4" class="issues-elem">
+                <div class="grid">
+                  <div class="issues-content--info push-2-16 col-2-16 tab-col-6-16 mobile-col-16-16">
+                    <h1>Онлайн кинотеатр</h1>
+                    <p>Платформы:</p>
+                    <p class="li">iPad</p>
+                    <p class="li">Android</p>
+                    <a href="#" class="appstore"></a>
+                    <a class="googleplay"></a>
+                    <button class="btn btn-arrow down">&larr; Назад к iphone</button>
+                  </div>
+                  <div class="push-1-16 col-5-16 tab-col-10-16 mobile-col-16-16"> <img width="100%" src="/images/app/tele4.png" /> </div>
+                  <div class="push-1-16 col-3-16 t-push-6-16 tab-col-10-16 mobile-col-16-16">
+                    <p>Бесплатное, простое и быстрое приложение для просмотра популярных фильмов, мультфильмов, сериалов и телепрограмм с портала NOW.ru на вашем устройстве. Без регистрации, без оплаты, без подписки, только выбор фильма и просмотр. </p>
+                    <div class="share-icon mobile-col-16-16">
+                      <p>Понравилось</p>
+                      <p>приложение?</p>
+                      <p> Расскажите друзьям</p>
+                      <div class=""><a href="#"><i class="fa fa-vk"></i></a></div>
+                      <div class=""><a href="#"><i class="fa fa-facebook"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="5" class="issues-elem">
+                <div class="grid">
+                  <div class="issues-content--info push-2-16 col-2-16 tab-col-6-16 mobile-col-16-16">
+                    <h1>Онлайн кинотеатр</h1>
+                    <p>Платформы:</p>
+                    <p class="li">iPad</p>
+                    <p class="li">Android</p>
+                    <a href="#" class="appstore"></a>
+                    <a class="googleplay"></a>
+                    <button class="btn btn-arrow down">&larr; Назад к iphone</button>
+                  </div>
+                  <div class="push-1-16 col-5-16 tab-col-10-16 mobile-col-16-16"> <img width="100%" src="/images/app/tele5.png" /> </div>
+                  <div class="push-1-16 col-3-16 t-push-6-16 tab-col-10-16 mobile-col-16-16">
+                    <p>Бесплатное, простое и быстрое приложение для просмотра популярных фильмов, мультфильмов, сериалов и телепрограмм с портала NOW.ru на вашем устройстве. Без регистрации, без оплаты, без подписки, только выбор фильма и просмотр. </p>
+                    <div class="share-icon mobile-col-16-16">
+                      <p>Понравилось</p>
+                      <p>приложение?</p>
+                      <p> Расскажите друзьям</p>
+                      <div class=""><a href="#"><i class="fa fa-vk"></i></a></div>
+                      <div class=""><a href="#"><i class="fa fa-facebook"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            
+            <li id="6" class="issues-elem">
+              <div class="grid">
+                <div class="issues-content--info push-2-16 col-2-16 tab-col-6-16 mobile-col-16-16">
+                  <h1>Онлайн кинотеатр</h1>
+                  <p>Платформы:</p>
+                  <p class="li">iPad</p>
+                  <p class="li">Android</p>
+                  <a href="#" class="appstore"></a>
+                  <a class="googleplay"></a>
+                  <button class="btn btn-arrow down">&larr; Назад к iphone</button>
+                </div>
+                <div class="push-1-16 col-5-16 tab-col-10-16 mobile-col-16-16"> <img width="100%" src="/images/app/tele6.png" /> </div>
+                <div class="push-1-16 col-3-16 t-push-6-16 tab-col-10-16 mobile-col-16-16">
+                  <p>Бесплатное, простое и быстрое приложение для просмотра популярных фильмов, мультфильмов, сериалов и телепрограмм с портала NOW.ru на вашем устройстве. Без регистрации, без оплаты, без подписки, только выбор фильма и просмотр. </p>
+                  <div class="share-icon mobile-col-16-16">
+                    <p>Понравилось</p>
+                    <p>приложение?</p>
+                    <p> Расскажите друзьям</p>
+                    <div class=""><a href="#"><i class="fa fa-vk"></i></a></div>
+                    <div class=""><a href="#"><i class="fa fa-facebook"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="7" class="issues-elem">
+              <div class="grid">
+                <div class="issues-content--info push-2-16 col-2-16 tab-col-6-16 mobile-col-16-16">
+                  <h1>Онлайн кинотеатр</h1>
+                  <p>Платформы:</p>
+                  <p class="li">iPad</p>
+                  <p class="li">Android</p>
+                  <a href="#" class="appstore"></a>
+                  <a class="googleplay"></a>
+                  <button class="btn btn-arrow down">&larr; Назад к iphone</button>
+                </div>
+                <div class="push-1-16 col-5-16 tab-col-10-16 mobile-col-16-16"> <img width="100%" src="/images/app/tele3.png" /> </div>
+                <div class="push-1-16 col-3-16 t-push-6-16 tab-col-10-16 mobile-col-16-16">
+                  <p>Бесплатное, простое и быстрое приложение для просмотра популярных фильмов, мультфильмов, сериалов и телепрограмм с портала NOW.ru на вашем устройстве. Без регистрации, без оплаты, без подписки, только выбор фильма и просмотр. </p>
+                  <div class="share-icon mobile-col-16-16">
+                    <p>Понравилось</p>
+                    <p>приложение?</p>
+                    <p> Расскажите друзьям</p>
+                    <div class=""><a href="#"><i class="fa fa-vk"></i></a></div>
+                    <div class=""><a href="#"><i class="fa fa-facebook"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            </ul>
+            <div id="grad_top"></div>
+            <div id="grad_bottom"></div> <a href="#" id="next">+</a> <a href="#" id="prev">-</a> </div>
+        </div>
+      </section>
+      <!--Встраеваемый контент конец-->
+    </main>
+    <!--content end-->
+    <!--footer start-->
+    <footer class="footer" id="Contact">
+      <p class="copyright">Copyright © 2015 Fiodorov Nikita. All rights reserved.</p>
+    </footer>
+    <!--footer end-->
+  </div>
+</body>
+
+</html>
