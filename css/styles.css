@@ -2513,7 +2513,8 @@ textarea {
         .slider #issues li img {
           height: 468px;
           width: auto;
-          zoom: 1.3; }
+          zoom: 1.3;
+          margin-left: -50%; }
         .slider #issues li h1 {
           font-size: 28px;
           margin-top: 234px;
