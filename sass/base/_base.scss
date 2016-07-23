@@ -14,77 +14,6 @@ $footer-height:10px;
 * used namespace normalize;
 * used namespace simplegrid;
 */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-
-/* font */
-
-@font-face {
-  font-family: 'DINPro';
-  font-style: normal;
-  font-weight: normal;
-  src: url('../fonts/DINPro-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'DINPro-Light';
-  src: url('../fonts/DINPro-Light.eot');
-  src: url('../fonts/DINPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/DINPro-Light.woff2') format('woff2'), url('../fonts/DINPro-Light.woff') format('woff'), url('../fonts/DINPro-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lato';
-  /*a name to be used later*/
-  src: url('../fonts/LatoRegular.ttf');
-  /*URL to font*/
-}
-
-
-/* headline */
-
-%headline {
-  font-family: 'DINPro', 'Roboto', sans-serif;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
-h1 {
-  @extend %headline;
-  font-size: 40px;
-  text-align: center;
-}
-
-h2 {
-  @extend %headline;
-  font-size: 30px;
-  padding-top: 20px;
-}
-
-h3 {
-  @extend %headline;
-  font-size: 20px;
-  padding: 0 10px;
-  font-weight: bold;
-}
-
-h4 {
-  @extend %headline;
-  font-size: 22px;
-  text-align: center;
-}
-
-p {
-  font-family: 'Lato', 'Roboto', sans-serif;
-  color: rgb(0, 0, 0);
-  line-height: 1.2;
-  font-size: 16px;
-}
-
 a,
 a:hover {
   text-decoration: none;
@@ -130,8 +59,6 @@ ol {
 html,
 body {
   height: 100%; //Растяжка на весь экран
-  font-family: 'Roboto', sans-serif;
-  color: rgb(0, 0, 0);
 }
 
 .container {

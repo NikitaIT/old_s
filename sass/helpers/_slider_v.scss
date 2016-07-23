@@ -60,7 +60,6 @@ $slider-height:100vw/2.3;
     width: 30px;
     height: 30px;
     line-height: 10px;
-    font-size: 24px;
     margin:  0 auto;
   }
   #dates a {
@@ -69,7 +68,6 @@ $slider-height:100vw/2.3;
     background: url(/images/slider/dot.png) 4px center no-repeat;
   }
   #dates .selected {
-    font-size: 38px;
     background: url(/images/slider/dot-select.png) 0px center no-repeat;
   }
   #issues {
@@ -101,7 +99,6 @@ $slider-height:100vw/2.3;
   #issues li h1 {
     //color: #ffcc00;
     color: white;
-    font-size: 48px;
     text-align: center;
     text-shadow: #000 1px 1px 2px;
   }
@@ -109,7 +106,6 @@ $slider-height:100vw/2.3;
     position: absolute;
     width: 0;
     height: 0;
-    font-size: 14px;
     margin: 10px 20px;
     font-weight: normal;
     line-height: 22px;
@@ -158,55 +154,6 @@ $slider-height:100vw/2.3;
     opacity: 0.2;
   }
 }
-@media screen and ( min-width: 1440px )
-{
-  .slider {
-  #issues {
-    li {
-      h1{
-          font-size: 70px;
-        }
-    }
-  }
-}
-}
-@media screen and ( max-width: 1440px )
-{
-  .slider {
-  #issues {
-    li {
-      h1{
-          font-size: 48px;
-        }
-    }
-  }
-}
-}
-@media screen and ( max-width: 1024px )
-{
-    .slider {
-  #issues {
-    li {
-      h1{
-          font-size: 35px;
-        }
-    }
-  }
-}
-}
-
-@media screen and ( max-width: 768px )
-{
-    .slider {
-  #issues {
-    li {
-      h1{
-          font-size: 18px;
-        }
-    }
-  }
-}
-}
 @media screen and ( max-width: 468px )
 {
   $slider-height:468px;
@@ -228,7 +175,6 @@ $slider-height:100vw/2.3;
         margin-left: -50%;
       }
       h1{
-          font-size: 28px;
           margin-top: $slider-height*0.5;
           text-align: left;
         }
@@ -236,18 +182,6 @@ $slider-height:100vw/2.3;
   }
   #next {
     margin-top: $slider-height*0.95;
-  }
-}
-}
-@media screen and ( max-width: 344 )
-{
-   .slider {
-  #issues {
-    li {
-      h1{
-          font-size: 20px;
-        }
-    }
   }
 }
 }

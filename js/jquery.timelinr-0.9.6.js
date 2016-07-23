@@ -2,6 +2,7 @@
 jQuery Timelinr 0.9.55
 tested with jQuery v1.6+
 
+
 Copyright 2011, CSSLab.cl
 Free under the MIT license.
 http://www.opensource.org/licenses/mit-license.php

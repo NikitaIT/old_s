@@ -1,0 +1,372 @@
+//1366*768               0.64*1.5625em = 1em           = 1.875em
+//1600 1em; 1.5625em;
+//1024 0.64; 1em;
+//.Бесплатное__простое_и_быстрое_приложение_для_пр {
+//  font-size: 1em;
+//  font-family: "Lato";
+//  color: rgb(202, 184, 188);
+//  line-height: 1.625;
+//  text-align: left;
+//  position: absolute;
+//  left: 1083.937px;
+//  top: 273.546px;
+//  width: 278px;
+//  height: 197px;
+//  z-index: 16;
+//}
+//.старое_кино {
+//  font-size: 1.875em;
+//  font-family: "DINPro";
+//  color: rgb(255, 255, 255);
+//  text-transform: uppercase;
+//  line-height: 1.333;
+//  text-align: left;
+//  position: absolute;
+//  left: 219.88px;
+//  top: 240.505px;
+//  z-index: 8;
+//}
+//.назад__к_iphone {
+//  font-size: 1em;
+//  font-family: "DINPro";
+//  color: rgb(238, 102, 40);
+//  text-transform: uppercase;
+//  line-height: 1.625;
+//  text-align: left;
+//  position: absolute;
+//  left: 261.937px;
+//  top: 743.546px;
+//  width: 130px;
+//  height: 15px;
+//  z-index: 19;
+//}
+// слайдер {
+//  font-size: 16px;
+//  font-family: "DINPro";
+//  color: rgb(202, 184, 188);
+//  line-height: 1.625;
+//  text-align: left;
+//  position: absolute;
+//  left: 627.937px;
+//  top: 175.546px;
+//  width: 97px;
+//  height: 12px;
+//  z-index: 48;
+//}
+
+
+
+//.проектируем_и_создаем_мобильные_приложения_ {
+//  font-family: "DINPro";
+//  color: rgb(255, 255, 255);
+//  text-transform: uppercase;
+//  line-height: 1.465;
+//  text-align: center;
+//  position: absolute;
+//  left: 499.844px;
+//  top: 383.012px;
+//  z-index: 73;
+//}
+//.Сделать_мир_ярче__Легко__ {
+//  font-family: "DINPro";
+//  color: rgb(0, 0, 0);
+//  text-transform: uppercase;
+//  line-height: 1.333;
+//  text-align: left;
+//  position: absolute;
+//  left: 585.88px;
+//  top: 860.833px;
+//  z-index: 65;
+//}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@font-face {
+  font-family: 'DINPro';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/DINPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DINPro-Light';
+  src: url('../fonts/DINPro-Light.eot');
+  src: url('../fonts/DINPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/DINPro-Light.woff2') format('woff2'), url('../fonts/DINPro-Light.woff') format('woff'), url('../fonts/DINPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: "JournalRegular";
+    src: url("journal-webfont.eot");
+    src: url("journal-webfont.eot?#iefix") format("embedded-opentype"),
+         url("journal-webfont.woff") format("woff"),
+         url("journal-webfont.ttf") format("truetype"),
+         url("journal-webfont.svg#JournalRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  /*a name to be used later*/
+  src: url('../fonts/LatoRegular.ttf');
+  /*URL to font*/
+}
+
+* {
+  font-family: 'DINPro', 'Roboto', sans-serif;
+}
+/* headline */
+//$h1-b:2em;
+//$h2-b:1.5em;
+//$h3-b:1.2em;
+//$h4-b:1em;
+//$p-b:1em;
+$h1-b:1.72em;
+$h2-b:1.2em;
+$h3-b:0.768em;
+$h4-b:0.64em;
+$p-b:0.64em;
+%headline {
+  font-family: 'DINPro', 'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+h1 {
+  @extend %headline;
+  font-size: $h1-b;
+}
+
+h2 {
+  @extend %headline;
+  font-size: $h2-b;
+}
+
+h3 {
+  @extend %headline;
+  font-size: $h3-b;
+}
+
+h4 {
+  @extend %headline;
+  font-size: $h4-b;
+}
+p {
+  font-family: 'Lato', 'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  font-size: $p-b;
+}
+
+@media ( max-width: 5561px) and (min-width: 5062px) {
+  $k:5.43;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 5061px) and (min-width: 4562px){
+  $k:5;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 4561px) and (min-width: 4062px){
+  $k:4.5;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 4061px) and (min-width: 3562px){
+  $k:4;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 3561px) and (min-width: 3062px){
+  $k:3.5;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 3061px) and (min-width: 2562px){
+  $k:3;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 2561px) and (min-width: 2362px){
+  $k:2.5;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 2361px) and (min-width: 1962px){
+  $k:2.3;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 1961px) and (min-width: 1602px){
+  $k:1.9;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 1601px) and (min-width: 1442px){
+  $k:1.56;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+@media (max-width: 1441px) and (min-width: 1026px){
+  $k:1.4;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+
+@media( max-width: 1025px) and (min-width: 769px){
+  h1 {font-size: $h1-b;}
+  h2 {font-size: $h2-b;}
+  h3 {font-size: $h3-b;}
+  h4 {font-size: $h4-b;}
+  p,a {font-size: $p-b;}
+}
+
+@media( max-width: 768px) and (min-width: 469px){
+  $k:0.75+1;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+
+@media( max-width: 468px) and (min-width: 345px){
+  $k:0.457+1;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+
+@media( max-width: 344px) {
+  $k:0.33+1;
+  h1 {font-size: $h1-b*$k;}
+  h2 {font-size: $h2-b*$k;}
+  h3 {font-size: $h3-b*$k;}
+  h4 {font-size: $h4-b*$k;}
+  p,a {font-size: $p-b*$k;}
+}
+//.nav-right li
+$button-b:$p-b;
+@media( max-width: 5561px) {
+  $k:5.43;
+  .nav a {font-size: $button-b*$k;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458; }
+}
+@media( max-width: 2561px) {
+  $k:2.5;
+  .nav a {font-size: $button-b*$k;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+}
+@media( max-width: 1441px) {
+  $k:1.4;
+  .nav a {font-size: $button-b*$k;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+}
+@media( max-width: 1025px) {
+  .nav a {font-size: $button-b;}
+  .nav-right li {width: $button-b*1.458;height:$button-b*1.458;}
+}
+@media( max-width: 768px) {
+  $k:0.75+0.5;
+  .nav a {font-size: $button-b*$k;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+}
+@media( max-width: 468px) {
+  $k:0.457+0.5;
+  .nav a {font-size: $button-b*$k;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+}
+@media( max-width: 344px) {
+  $k:0.33+0.5;
+  .nav a {font-size: $button-b*$k;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+}
+//шаблон
+$button-b:$p-b;
+@media( max-width: 5561px) {
+  $k:5.43;
+  button {font-size: $button-b*$k;}
+}
+@media( max-width: 2561px) {
+  $k:2.5;
+  button {font-size: $button-b*$k;}
+}
+@media( max-width: 1441px) {
+  $k:1.4;
+  button {font-size: $button-b*$k;}
+}
+@media( max-width: 1025px) {
+  button {font-size: $button-b;}
+}
+@media( max-width: 768px) {
+  $k:0.75+0.5;
+  button {font-size: $button-b*$k;}
+}
+@media( max-width: 468px) {
+  $k:0.457+0.5;
+  button {font-size: $button-b*$k;}
+}
+@media( max-width: 344px) {
+  $k:0.33+0.5;
+  button {font-size: $button-b*$k;}
+}
+
+
+//.block__app--content {
+//  color: rgb(202, 184, 188);
+//  line-height: 1.6;
+//  padding-top: 30px;
+//}
+//
+//.block__app--content p {
+//  font-family: "Lato"!important;
+//}
+//
+//.app h1 {
+//  font-family: 'DINPro-Light';
+//  text-transform: uppercase;
+//  color: white;
+//  margin-left: 20px;
+//  margin-top: 0px;
+//}
