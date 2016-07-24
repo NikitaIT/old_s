@@ -1,30 +1,3 @@
-$appstore-media-width:146px;
-.appstore {
-  display: block;
-  background: url(/images/app/appstore-w.png) no-repeat!important;
-  background-size: 100% !important;
-  background-attachment:local;
-  width: $appstore-media-width;
-  height: $appstore-media-width*0.35;
-  border-radius: 4px;
-  &:hover {
-    background-color: black !important;
-    background-size: 100%;
-  }
-}
-
-.googleplay {
-  display: block;
-  background: url(/images/app/googleplay-w.png) no-repeat !important;
-  width: 146px;
-  height: 50px;
-  border-radius: 4px;
-  &:hover {
-    background-color: black !important;
-    background-size: 100%;
-  }
-}
-
 .slider-h {
   .col-16-16 {
     padding: 0 !important;
