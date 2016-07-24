@@ -147,7 +147,8 @@ p {
 }
 a {font-family: 'DINPro', 'Roboto', sans-serif;}
 
-@media ( max-width: 5561px) and (min-width: 5062px) {
+//( max-width: 5561px) and
+@media (min-width: 5062px) {
   $k:5.43;
   h1 {font-size: $h1-b*$k;}
   h2 {font-size: $h2-b*$k;}
@@ -246,7 +247,7 @@ a {font-family: 'DINPro', 'Roboto', sans-serif;}
 
 @media( max-width: 768px) and (min-width: 469px){
   $k:0.75+1;
-  h1 {font-size: $h1-b*$k;}
+  h1 {font-size: $h1-b*$k+-0.9em;;}
   h2 {font-size: $h2-b*$k;}
   h3 {font-size: $h3-b*$k;}
   h4 {font-size: $h4-b*$k;}
@@ -273,56 +274,57 @@ a {font-family: 'DINPro', 'Roboto', sans-serif;}
 
 //.nav-right li
 $button-b:$p-b;
-@media ( max-width: 5561px) and (min-width: 5062px) {
-  $k:5.43;.nav a {font-size: $button-b*$k;}
+//( max-width: 5561px) and
+@media (min-width: 5062px) {
+  $k:5.43;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
   .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
 }
 @media (max-width: 5061px) and (min-width: 4562px){
-  $k:5;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media (max-width: 4561px) and (min-width: 4062px){
-  $k:4.5;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:4.5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media (max-width: 4061px) and (min-width: 3562px){
-  $k:4;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:4;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media (max-width: 3561px) and (min-width: 3062px){
-  $k:3.5;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:3.5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media (max-width: 3061px) and (min-width: 2562px){
-  $k:3;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:3;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media (max-width: 2561px) and (min-width: 2362px){
-  $k:2.5;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:2.5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media (max-width: 2361px) and (min-width: 1962px){
-  $k:2.3;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:2.3;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media (max-width: 1961px) and (min-width: 1602px){
-  $k:1.9;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:1.9;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media (max-width: 1601px) and (min-width: 1442px){
-  $k:1.56;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:1.56;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media (max-width: 1441px) and (min-width: 1026px){
-  $k:1.4;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:1.4;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*0.7;}
+  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
 }
 @media( max-width: 1025px) and (min-width: 769px){
-  .nav a {font-size: $button-b;}
-  .nav-right li {width: $button-b*1.458;height:$button-b*1.458;}
+  .nav a {font-size: $button-b;}.nav li{padding: $button-b*1.458+$button-b*0.7;}
+  .nav-right li {width: $button-b*1.458;height:$button-b*1.458;padding: $button-b*0.7;}
 }
 @media( max-width: 768px) and (min-width: 469px){
-  $k:0.75+1;.nav a {font-size: $button-b*$k;}
+  $k:0.75+0.5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458;}
   .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
 }
 @media( max-width: 468px) and (min-width: 345px){
@@ -335,7 +337,8 @@ $button-b:$p-b;
 }
 //button
 $button-b:$p-b;
-@media ( max-width: 5561px) and (min-width: 5062px) {
+//( max-width: 5561px) and
+@media (min-width: 5062px) {
   $k:5.43;button {font-size: $button-b*$k;}
 }
 @media (max-width: 5061px) and (min-width: 4562px){
@@ -385,7 +388,8 @@ $button-b:$p-b;
 $dates-margin: 80px;
 $dates-height: 40px;
 $dates-li-padding: 3px;
-@media ( max-width: 5561px) and (min-width: 5062px) {
+//( max-width: 5561px) and
+@media (min-width: 5062px) {
   $k:5.43;
   .slider-h #dates {margin: $dates-margin*$k 0;height: $dates-height*$k;li{padding-top: $dates-li-padding*$k;}
   }
@@ -448,7 +452,8 @@ $dates-li-padding: 3px;
 }
 
 //.form
-@media ( max-width: 5561px) and (min-width: 5062px) {
+//( max-width: 5561px) and
+@media (min-width: 5062px) {
   $k:5.43;.form-control{font-size: $p-b*$k;}.form{margin-bottom: $p-b*$k;}
 }
 @media (max-width: 5061px) and (min-width: 4562px){
@@ -493,7 +498,9 @@ $dates-li-padding: 3px;
 @media( max-width: 344px) {
   $k:0.33+1;.form-control{font-size: $p-b*$k;}.form{margin-bottom: $h1-b*$k;}
 }
-/*@media ( max-width: 5561px) and (min-width: 5062px) {
+/*
+//( max-width: 5561px) and
+@media (min-width: 5062px) {
   $k:5.43;
 }
 @media (max-width: 5061px) and (min-width: 4562px){

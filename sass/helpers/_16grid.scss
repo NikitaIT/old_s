@@ -7,7 +7,8 @@
 //200 - края
 //1200 - контент
 //100 - слой
-
+.p-0{padding: 0!important;}
+.m-0{margin: 0!important;}
 [class*='col-'] {
   float: left;
   min-height: 1px;
