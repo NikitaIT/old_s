@@ -62,20 +62,6 @@
 }
 
 
-
-.portfolio {
-  .app-item-container .app-item .app-item-image {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-  .app-item-container .app-item:hover .caption {
-    opacity: 0;
-  }
-}
-
 @media ( max-width: 768px) {
   .app-item-container {
     &:nth-child(2n-1) .app-item--info .app-item--share {

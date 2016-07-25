@@ -269,15 +269,14 @@ $nav-text-b:16px*0.64;//$p-b;
 $icon-zoom-hight:0.57;
 $nav-centr-li-zoom-padding:2.25;
 $logo-const:30px*0.64;
-$nav-right-a-zoom-padding:2;
-$icon-hight-zoom-padding:2;
+$nav-right-a-zoom-padding:2.0;//мерджн
+$icon-hight-zoom-padding:1.4;
+$icon:1.8;
 @media (min-width: 5062px) {
   $k:5.43;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li { i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -288,9 +287,7 @@ $icon-hight-zoom-padding:2;
   $k:5;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -301,9 +298,7 @@ $icon-hight-zoom-padding:2;
   $k:4.5;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -314,9 +309,7 @@ $icon-hight-zoom-padding:2;
   $k:4;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -327,9 +320,7 @@ $icon-hight-zoom-padding:2;
   $k:3.5;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -340,9 +331,7 @@ $icon-hight-zoom-padding:2;
   $k:3;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -353,9 +342,7 @@ $icon-hight-zoom-padding:2;
   $k:2.5;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -366,9 +353,7 @@ $icon-hight-zoom-padding:2;
   $k:2.3;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -379,9 +364,7 @@ $icon-hight-zoom-padding:2;
   $k:1.9;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight;
   }
@@ -392,9 +375,7 @@ $icon-hight-zoom-padding:2;
   $k:1.56;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -405,9 +386,7 @@ $icon-hight-zoom-padding:2;
   $k:1.4;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -418,9 +397,7 @@ $icon-hight-zoom-padding:2;
   $k:1;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -431,9 +408,7 @@ $icon-hight-zoom-padding:2;
   $k:0.75+0.5;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
-  .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
+  .nav-right li {i{font-size: $nav-text-b*$k*$icon;}
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
     margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
   }
@@ -445,8 +420,6 @@ $icon-hight-zoom-padding:2;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
   .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding + -4px;
   }
   .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
@@ -457,8 +430,6 @@ $icon-hight-zoom-padding:2;
   .nav a {font-size: $nav-text-b*$k;}
   .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
   .nav-right li {
-    width: $nav-text-b*$k*$icon-zoom-hight;
-    height:$nav-text-b*$k*$icon-zoom-hight;
     padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding + -4px;
   }
   .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }

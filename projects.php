@@ -3,7 +3,20 @@
 /*Template Name: Projects
 */
 get_header();?>
-<div class="portfolio">
+
+ <div class="portfolio">
+ <nav class="nav clearfix" style="opacity:0;">
+          <li><a>123</a></li>
+</nav>
+<section class="filter" >
+ <ul class="filter-list">
+   <li><a class="btn btn-arrow" href="#">Все</a></li>
+   <li><a class="btn btn-arrow" href="#">Android</a></li>
+   <li><a class="btn btn-arrow" href="#">iOS</a></li>
+   <li><a class="btn btn-arrow" href="#">iPad</a></li>
+   <li><a class="btn btn-arrow" href="#">Windows Phone</a></li>
+ </ul>
+</section>
 <section class="grid app app-item-container">
       <div class="col-8-16 tab-col-16-16 mobile-col-16-16 app-item">
         <img width="100%" height="100%" class="app-item-image" src="<?php echo get_template_directory_uri(); ?>/images/app/portf5.png"/>

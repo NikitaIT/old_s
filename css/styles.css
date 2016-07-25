@@ -2535,6 +2535,7 @@ textarea {
   height: 400px;
   text-align: center; }
 .slider-h #dates a {
+  margin: 10px;
   line-height: 38px;
   padding-bottom: 10px;
   border-width: 0.1em; }
@@ -2938,6 +2939,48 @@ textarea:focus {
   background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #d44178 0%, #792539 0%, black 200%);
   background-image: -ms-radial-gradient(50% 50%, circle closest-side, #d44178 0%, #792539 0%, black 200%); }
 
+.portfolio {
+  background-color: white; }
+  .portfolio .filter {
+    padding: 80px 0; }
+    .portfolio .filter-list {
+      text-align: center; }
+      .portfolio .filter-list li {
+        display: inline-block; }
+      .portfolio .filter-list li a {
+        border-color: #cab8bc;
+        background-color: rgba(208, 54, 92, 0);
+        display: inline-block;
+        margin: 12px;
+        border-style: solid;
+        border-width: 0.1em;
+        border-radius: 12px;
+        color: #cab8bc;
+        padding: 5px 10px 5px 10px; }
+        .portfolio .filter-list li a:hover {
+          border-color: #ee6628;
+          color: #ee6628;
+          text-decoration: none;
+          background-color: rgba(208, 54, 92, 0); }
+        .portfolio .filter-list li a:active {
+          border-color: #ee6628;
+          color: #ee6628;
+          text-decoration: none;
+          background-color: rgba(208, 54, 92, 0); }
+  .portfolio .app-item-container .app-item .app-item-image {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease; }
+    .portfolio .app-item-container .app-item .app-item-image:hover {
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      filter: blur(5px); }
+  .portfolio .app-item-container .app-item:hover .caption {
+    opacity: 0; }
+
 .appstore {
   display: block;
   background: url(../images/app/appstore-w.png) no-repeat !important;
@@ -3162,15 +3205,6 @@ textarea:focus {
     opacity: 0; }
   .app-item-container .app-item:hover .caption {
     opacity: 1; }
-
-.portfolio .app-item-container .app-item .app-item-image {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease; }
-.portfolio .app-item-container .app-item:hover .caption {
-  opacity: 0; }
 
 @media (max-width: 768px) {
   .app-item-container:nth-child(2n-1) .app-item--info .app-item--share {
@@ -3479,10 +3513,10 @@ a {
     padding: 125.1072px; }
 
   .nav-right li {
-    width: 31.69382px;
-    height: 31.69382px;
-    padding: 63.38765px;
+    padding: 44.37135px;
     margin: 63.38765px; }
+    .nav-right li i {
+      font-size: 100.08576px; }
 
   .nav .header-logo {
     padding-top: 104.256px;
@@ -3498,10 +3532,10 @@ a {
     padding: 115.2px; }
 
   .nav-right li {
-    width: 29.184px;
-    height: 29.184px;
-    padding: 58.368px;
+    padding: 40.8576px;
     margin: 58.368px; }
+    .nav-right li i {
+      font-size: 92.16px; }
 
   .nav .header-logo {
     padding-top: 96px;
@@ -3517,10 +3551,10 @@ a {
     padding: 103.68px; }
 
   .nav-right li {
-    width: 26.2656px;
-    height: 26.2656px;
-    padding: 52.5312px;
+    padding: 36.77184px;
     margin: 52.5312px; }
+    .nav-right li i {
+      font-size: 82.944px; }
 
   .nav .header-logo {
     padding-top: 86.4px;
@@ -3536,10 +3570,10 @@ a {
     padding: 92.16px; }
 
   .nav-right li {
-    width: 23.3472px;
-    height: 23.3472px;
-    padding: 46.6944px;
+    padding: 32.68608px;
     margin: 46.6944px; }
+    .nav-right li i {
+      font-size: 73.728px; }
 
   .nav .header-logo {
     padding-top: 76.8px;
@@ -3555,10 +3589,10 @@ a {
     padding: 80.64px; }
 
   .nav-right li {
-    width: 20.4288px;
-    height: 20.4288px;
-    padding: 40.8576px;
+    padding: 28.60032px;
     margin: 40.8576px; }
+    .nav-right li i {
+      font-size: 64.512px; }
 
   .nav .header-logo {
     padding-top: 67.2px;
@@ -3574,10 +3608,10 @@ a {
     padding: 69.12px; }
 
   .nav-right li {
-    width: 17.5104px;
-    height: 17.5104px;
-    padding: 35.0208px;
+    padding: 24.51456px;
     margin: 35.0208px; }
+    .nav-right li i {
+      font-size: 55.296px; }
 
   .nav .header-logo {
     padding-top: 57.6px;
@@ -3593,10 +3627,10 @@ a {
     padding: 57.6px; }
 
   .nav-right li {
-    width: 14.592px;
-    height: 14.592px;
-    padding: 29.184px;
+    padding: 20.4288px;
     margin: 29.184px; }
+    .nav-right li i {
+      font-size: 46.08px; }
 
   .nav .header-logo {
     padding-top: 48px;
@@ -3612,10 +3646,10 @@ a {
     padding: 52.992px; }
 
   .nav-right li {
-    width: 13.42464px;
-    height: 13.42464px;
-    padding: 26.84928px;
+    padding: 18.7945px;
     margin: 26.84928px; }
+    .nav-right li i {
+      font-size: 42.3936px; }
 
   .nav .header-logo {
     padding-top: 44.16px;
@@ -3631,10 +3665,10 @@ a {
     padding: 43.776px; }
 
   .nav-right li {
-    width: 11.08992px;
-    height: 11.08992px;
-    padding: 22.17984px;
+    padding: 15.52589px;
     margin: 11.08992px; }
+    .nav-right li i {
+      font-size: 35.0208px; }
 
   .nav .header-logo {
     padding-top: 36.48px;
@@ -3650,10 +3684,10 @@ a {
     padding: 35.9424px; }
 
   .nav-right li {
-    width: 9.10541px;
-    height: 9.10541px;
-    padding: 18.21082px;
+    padding: 12.74757px;
     margin: 18.21082px; }
+    .nav-right li i {
+      font-size: 28.75392px; }
 
   .nav .header-logo {
     padding-top: 29.952px;
@@ -3669,10 +3703,10 @@ a {
     padding: 32.256px; }
 
   .nav-right li {
-    width: 8.17152px;
-    height: 8.17152px;
-    padding: 16.34304px;
+    padding: 11.44013px;
     margin: 16.34304px; }
+    .nav-right li i {
+      font-size: 25.8048px; }
 
   .nav .header-logo {
     padding-top: 26.88px;
@@ -3688,10 +3722,10 @@ a {
     padding: 23.04px; }
 
   .nav-right li {
-    width: 5.8368px;
-    height: 5.8368px;
-    padding: 11.6736px;
+    padding: 8.17152px;
     margin: 11.6736px; }
+    .nav-right li i {
+      font-size: 18.432px; }
 
   .nav .header-logo {
     padding-top: 19.2px;
@@ -3707,10 +3741,10 @@ a {
     padding: 28.8px; }
 
   .nav-right li {
-    width: 7.296px;
-    height: 7.296px;
-    padding: 14.592px;
+    padding: 10.2144px;
     margin: 14.592px; }
+    .nav-right li i {
+      font-size: 23.04px; }
 
   .nav .header-logo {
     padding-top: 24px;
@@ -3726,9 +3760,7 @@ a {
     padding: 33.56928px; }
 
   .nav-right li {
-    width: 8.50422px;
-    height: 8.50422px;
-    padding: 13.00844px; }
+    padding: 7.9059px; }
 
   .nav .header-logo {
     padding-top: 27.9744px;
@@ -3744,9 +3776,7 @@ a {
     padding: 30.6432px; }
 
   .nav-right li {
-    width: 7.76294px;
-    height: 7.76294px;
-    padding: 11.52589px; }
+    padding: 6.86812px; }
 
   .nav .header-logo {
     padding-top: 25.536px;
