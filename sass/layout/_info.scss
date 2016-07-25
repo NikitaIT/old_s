@@ -52,12 +52,9 @@
     text-transform: uppercase;
     line-height: 1.333;
     text-align: left;
-    padding-top: 35px;
   }
   a {
     display: block;
-    padding: 10px;
-    margin: 10px;
   }
 }
 
@@ -91,12 +88,10 @@
 }
 
 [href*=tel] {
-  padding: 10px;
   color: white;
 }
 
 [href*=mailto] {
-  padding: 10px;
   color: white;
 }
 

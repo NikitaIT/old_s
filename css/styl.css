@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -2755,7 +2755,7 @@ figure {
 
 .nav {
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   position: fixed;
   /*left:50%; 
   margin-left: -270px;
@@ -2903,9 +2903,12 @@ figure {
     color: white;
     text-transform: uppercase;
     line-height: 1.333;
-    text-align: left; }
+    text-align: left;
+    padding-top: 35px; }
   .contact_us a {
-    display: block; }
+    display: block;
+    padding: 10px;
+    margin: 10px; }
 
 .form-control {
   border: 2px solid white;
@@ -2920,9 +2923,11 @@ figure {
   width: 100%; }
 
 [href*=tel] {
+  padding: 10px;
   color: white; }
 
 [href*=mailto] {
+  padding: 10px;
   color: white; }
 
 input:focus {
@@ -3026,6 +3031,7 @@ textarea:focus {
   background: none;
   cursor: pointer;
   font-weight: bold;
+  margin: 2px 15px;
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
@@ -3034,7 +3040,8 @@ textarea:focus {
     height: 42px;
     border-radius: 1.37em;
     padding: 5px 25px 5px 25px;
-    color: white; }
+    color: white;
+    margin: 10px 15px; }
   .btn:hover {
     background-color: #9b4949; }
   .btn-normal {
@@ -3127,8 +3134,7 @@ textarea:focus {
     position: absolute; }
   .app-item-container .app-item .app-item--info {
     z-index: 100;
-    padding: 1.25vw 0 0 2.5vw;
-    height: 20.9375vw;
+    padding: 6.25vw 0 0 2.5vw;
     position: absolute; }
     .app-item-container .app-item .app-item--info .app-item--discr {
       color: white;
@@ -3473,287 +3479,160 @@ a {
     font-size: 0.8911em; } }
 @media (min-width: 5062px) {
   .nav a {
-    font-size: 55.6032px; }
+    font-size: 3.6381em; }
 
   .nav li {
-    padding: 125.1072px; }
+    padding: 7.85102em; }
 
   .nav-right li {
-    width: 31.69382px;
-    height: 31.69382px;
-    padding: 63.38765px;
-    margin: 63.38765px; }
-
-  .nav .header-logo {
-    padding-top: 104.256px;
-    padding-bottom: 104.256px; }
-
-  .nav .header-logo img {
-    height: 104.256px; } }
+    width: 5.30435em;
+    height: 5.30435em;
+    padding: 2.54667em; } }
 @media (max-width: 5061px) and (min-width: 4562px) {
   .nav a {
-    font-size: 51.2px; }
+    font-size: 3.35em; }
 
   .nav li {
-    padding: 115.2px; }
+    padding: 7.2293em; }
 
   .nav-right li {
-    width: 29.184px;
-    height: 29.184px;
-    padding: 58.368px;
-    margin: 58.368px; }
-
-  .nav .header-logo {
-    padding-top: 96px;
-    padding-bottom: 96px; }
-
-  .nav .header-logo img {
-    height: 96px; } }
+    width: 4.8843em;
+    height: 4.8843em;
+    padding: 2.345em; } }
 @media (max-width: 4561px) and (min-width: 4062px) {
   .nav a {
-    font-size: 46.08px; }
+    font-size: 3.015em; }
 
   .nav li {
-    padding: 103.68px; }
+    padding: 6.50637em; }
 
   .nav-right li {
-    width: 26.2656px;
-    height: 26.2656px;
-    padding: 52.5312px;
-    margin: 52.5312px; }
-
-  .nav .header-logo {
-    padding-top: 86.4px;
-    padding-bottom: 86.4px; }
-
-  .nav .header-logo img {
-    height: 86.4px; } }
+    width: 4.39587em;
+    height: 4.39587em;
+    padding: 2.1105em; } }
 @media (max-width: 4061px) and (min-width: 3562px) {
   .nav a {
-    font-size: 40.96px; }
+    font-size: 2.68em; }
 
   .nav li {
-    padding: 92.16px; }
+    padding: 5.78344em; }
 
   .nav-right li {
-    width: 23.3472px;
-    height: 23.3472px;
-    padding: 46.6944px;
-    margin: 46.6944px; }
-
-  .nav .header-logo {
-    padding-top: 76.8px;
-    padding-bottom: 76.8px; }
-
-  .nav .header-logo img {
-    height: 76.8px; } }
+    width: 3.90744em;
+    height: 3.90744em;
+    padding: 1.876em; } }
 @media (max-width: 3561px) and (min-width: 3062px) {
   .nav a {
-    font-size: 35.84px; }
+    font-size: 2.345em; }
 
   .nav li {
-    padding: 80.64px; }
+    padding: 5.06051em; }
 
   .nav-right li {
-    width: 20.4288px;
-    height: 20.4288px;
-    padding: 40.8576px;
-    margin: 40.8576px; }
-
-  .nav .header-logo {
-    padding-top: 67.2px;
-    padding-bottom: 67.2px; }
-
-  .nav .header-logo img {
-    height: 67.2px; } }
+    width: 3.41901em;
+    height: 3.41901em;
+    padding: 1.6415em; } }
 @media (max-width: 3061px) and (min-width: 2562px) {
   .nav a {
-    font-size: 30.72px; }
+    font-size: 2.01em; }
 
   .nav li {
-    padding: 69.12px; }
+    padding: 4.33758em; }
 
   .nav-right li {
-    width: 17.5104px;
-    height: 17.5104px;
-    padding: 35.0208px;
-    margin: 35.0208px; }
-
-  .nav .header-logo {
-    padding-top: 57.6px;
-    padding-bottom: 57.6px; }
-
-  .nav .header-logo img {
-    height: 57.6px; } }
+    width: 2.93058em;
+    height: 2.93058em;
+    padding: 1.407em; } }
 @media (max-width: 2561px) and (min-width: 2362px) {
   .nav a {
-    font-size: 25.6px; }
+    font-size: 1.675em; }
 
   .nav li {
-    padding: 57.6px; }
+    padding: 3.61465em; }
 
   .nav-right li {
-    width: 14.592px;
-    height: 14.592px;
-    padding: 29.184px;
-    margin: 29.184px; }
-
-  .nav .header-logo {
-    padding-top: 48px;
-    padding-bottom: 48px; }
-
-  .nav .header-logo img {
-    height: 48px; } }
+    width: 2.44215em;
+    height: 2.44215em;
+    padding: 1.1725em; } }
 @media (max-width: 2361px) and (min-width: 1962px) {
   .nav a {
-    font-size: 23.552px; }
+    font-size: 1.541em; }
 
   .nav li {
-    padding: 52.992px; }
+    padding: 3.32548em; }
 
   .nav-right li {
-    width: 13.42464px;
-    height: 13.42464px;
-    padding: 26.84928px;
-    margin: 26.84928px; }
-
-  .nav .header-logo {
-    padding-top: 44.16px;
-    padding-bottom: 44.16px; }
-
-  .nav .header-logo img {
-    height: 44.16px; } }
+    width: 2.24678em;
+    height: 2.24678em;
+    padding: 1.0787em; } }
 @media (max-width: 1961px) and (min-width: 1602px) {
   .nav a {
-    font-size: 19.456px; }
+    font-size: 1.273em; }
 
   .nav li {
-    padding: 43.776px; }
+    padding: 2.74713em; }
 
   .nav-right li {
-    width: 11.08992px;
-    height: 11.08992px;
-    padding: 22.17984px;
-    margin: 11.08992px; }
-
-  .nav .header-logo {
-    padding-top: 36.48px;
-    padding-bottom: 36.48px; }
-
-  .nav .header-logo img {
-    height: 36.48px; } }
+    width: 1.85603em;
+    height: 1.85603em;
+    padding: 0.8911em; } }
 @media (max-width: 1601px) and (min-width: 1442px) {
   .nav a {
-    font-size: 15.9744px; }
+    font-size: 1.0452em; }
 
   .nav li {
-    padding: 35.9424px; }
+    padding: 2.25554em; }
 
   .nav-right li {
-    width: 9.10541px;
-    height: 9.10541px;
-    padding: 18.21082px;
-    margin: 18.21082px; }
-
-  .nav .header-logo {
-    padding-top: 29.952px;
-    padding-bottom: 29.952px; }
-
-  .nav .header-logo img {
-    height: 29.952px; } }
+    width: 1.5239em;
+    height: 1.5239em;
+    padding: 0.73164em; } }
 @media (max-width: 1441px) and (min-width: 1026px) {
   .nav a {
-    font-size: 14.336px; }
+    font-size: 0.938em; }
 
   .nav li {
-    padding: 32.256px; }
+    padding: 1.8366em; }
 
   .nav-right li {
-    width: 8.17152px;
-    height: 8.17152px;
-    padding: 16.34304px;
-    margin: 16.34304px; }
-
-  .nav .header-logo {
-    padding-top: 26.88px;
-    padding-bottom: 26.88px; }
-
-  .nav .header-logo img {
-    height: 26.88px; } }
+    width: 1.3676em;
+    height: 1.3676em;
+    padding: 0.6566em; } }
 @media (max-width: 1025px) and (min-width: 769px) {
   .nav a {
-    font-size: 10.24px; }
+    font-size: 0.67em; }
 
   .nav li {
-    padding: 23.04px; }
+    padding: 1.44586em; }
 
   .nav-right li {
-    width: 5.8368px;
-    height: 5.8368px;
-    padding: 11.6736px;
-    margin: 11.6736px; }
-
-  .nav .header-logo {
-    padding-top: 19.2px;
-    padding-bottom: 19.2px; }
-
-  .nav .header-logo img {
-    height: 19.2px; } }
+    width: 0.97686em;
+    height: 0.97686em;
+    padding: 0.469em; } }
 @media (max-width: 768px) and (min-width: 469px) {
   .nav a {
-    font-size: 12.8px; }
+    font-size: 0.8375em; }
 
   .nav li {
-    padding: 28.8px; }
+    padding: 1.22107em; }
 
   .nav-right li {
-    width: 7.296px;
-    height: 7.296px;
-    padding: 14.592px;
-    margin: 14.592px; }
-
-  .nav .header-logo {
-    padding-top: 24px;
-    padding-bottom: 24px; }
-
-  .nav .header-logo img {
-    height: 24px; } }
+    width: 1.22107em;
+    height: 1.22107em; } }
 @media (max-width: 468px) and (min-width: 345px) {
   .nav a {
-    font-size: 14.91968px; }
-
-  .nav li {
-    padding: 33.56928px; }
+    font-size: 0.97619em; }
 
   .nav-right li {
-    width: 8.50422px;
-    height: 8.50422px;
-    padding: 13.00844px; }
-
-  .nav .header-logo {
-    padding-top: 27.9744px;
-    padding-bottom: 27.9744px; }
-
-  .nav .header-logo img {
-    height: 27.9744px; } }
+    width: 1.42329em;
+    height: 1.42329em; } }
 @media (max-width: 344px) {
   .nav a {
-    font-size: 13.6192px; }
-
-  .nav li {
-    padding: 30.6432px; }
+    font-size: 0.8911em; }
 
   .nav-right li {
-    width: 7.76294px;
-    height: 7.76294px;
-    padding: 11.52589px; }
-
-  .nav .header-logo {
-    padding-top: 25.536px;
-    padding-bottom: 25.536px; }
-
-  .nav .header-logo img {
-    height: 25.536px; } }
+    width: 1.29922em;
+    height: 1.29922em; } }
 @media (min-width: 5062px) {
   button {
     font-size: 3.6381em; } }

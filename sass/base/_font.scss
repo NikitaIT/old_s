@@ -262,68 +262,207 @@ a {font-family: 'DINPro', 'Roboto', sans-serif;}
   p,a {font-size: $p-b*$k;}
 }
 
-//.nav-right li
-$button-b:$p-b;
+//.nav
+$nav-text-b:16px*0.64;//$p-b;
 //( max-width: 5561px) and
+//0.64 - для приведения от 1600 к 1024
+$icon-zoom-hight:0.57;
+$nav-centr-li-zoom-padding:2.25;
+$logo-const:30px*0.64;
+$nav-right-a-zoom-padding:2;
+$icon-hight-zoom-padding:2;
 @media (min-width: 5062px) {
-  $k:5.43;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:5.43;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 5061px) and (min-width: 4562px){
-  $k:5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:5;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 4561px) and (min-width: 4062px){
-  $k:4.5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:4.5;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 4061px) and (min-width: 3562px){
-  $k:4;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:4;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 3561px) and (min-width: 3062px){
-  $k:3.5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:3.5;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 3061px) and (min-width: 2562px){
-  $k:3;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:3;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 2561px) and (min-width: 2362px){
-  $k:2.5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:2.5;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 2361px) and (min-width: 1962px){
-  $k:2.3;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:2.3;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 1961px) and (min-width: 1602px){
-  $k:1.9;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:1.9;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 1601px) and (min-width: 1442px){
-  $k:1.56;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*$k*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:1.56;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media (max-width: 1441px) and (min-width: 1026px){
-  $k:1.4;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458+$button-b*0.7;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;padding: $button-b*$k*0.7;}
+  $k:1.4;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media( max-width: 1025px) and (min-width: 769px){
-  .nav a {font-size: $button-b;}.nav li{padding: $button-b*1.458+$button-b*0.7;}
-  .nav-right li {width: $button-b*1.458;height:$button-b*1.458;padding: $button-b*0.7;}
+  $k:1;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media( max-width: 768px) and (min-width: 469px){
-  $k:0.75+0.5;.nav a {font-size: $button-b*$k;}.nav li{padding: $button-b*$k*1.458;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:0.75+0.5;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding;
+    margin: $nav-text-b*$k*$icon-zoom-hight*$nav-right-a-zoom-padding;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media( max-width: 468px) and (min-width: 345px){
-  $k:0.457+1;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:0.457+1;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding + -4px;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 @media( max-width: 344px) {
-  $k:0.33+1;.nav a {font-size: $button-b*$k;}
-  .nav-right li {width: $button-b*$k*1.458;height:$button-b*$k*1.458;}
+  $k:0.33+1;
+  .nav a {font-size: $nav-text-b*$k;}
+  .nav li{padding: $nav-text-b*$k*$nav-centr-li-zoom-padding;}
+  .nav-right li {
+    width: $nav-text-b*$k*$icon-zoom-hight;
+    height:$nav-text-b*$k*$icon-zoom-hight;
+    padding: $nav-text-b*$k*$icon-zoom-hight*$icon-hight-zoom-padding + -4px;
+  }
+  .nav .header-logo{padding-top: $logo-const*$k; padding-bottom: $logo-const*$k; }
+  .nav .header-logo img{height: $logo-const*$k;}
 }
 //button
 $button-b:$p-b;
