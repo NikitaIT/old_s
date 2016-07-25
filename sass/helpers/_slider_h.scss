@@ -90,7 +90,7 @@
       .share-icon {
         text-align: center;
         &:before {
-          content: url(/images/sprites/share.png);
+          content: url(../images/sprites/share.png);
           position: relative;
           top: 150px;
           left: -150px;
@@ -151,12 +151,12 @@
   #next {
     background-position: 0 +6px;
     right: 0;
-    background-image: url(/images/slider/slider-h-next.png);
+    background-image: url(../images/slider/slider-h-next.png);
   }
   #prev {
     background-position: 0 +9px;
     left: 0;
-    background-image: url(/images/slider/slider-h-next.png);
+    background-image: url(../images/slider/slider-h-next.png);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -180,7 +180,7 @@
 }
 @media(max-width:480px){
   .slider-h #issues li .share-icon:after {
-    content: url(/images/sprites/share-circle.png);
+    content: url(../images/sprites/share-circle.png);
     left: 33px;
     bottom: 4px;
     margin: -41px -45px;
@@ -201,7 +201,7 @@
           left: 50vw;
           margin-left: -83px;
 //      &:before {
-//        content: url(/images/sprites/share-circle.png);
+//        content: url(../images/sprites/share-circle.png);
 //        top: 163px;
 //    left: -79px;
 //      }

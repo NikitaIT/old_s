@@ -65,10 +65,10 @@ $slider-height:100vw/2.3;
   #dates a {
     line-height: 38px;
     padding-bottom: 10px;
-    background: url(/images/slider/dot.png) 4px center no-repeat;
+    background: url(../images/slider/dot.png) 4px center no-repeat;
   }
   #dates .selected {
-    background: url(/images/slider/dot-select.png) 0px center no-repeat;
+    background: url(../images/slider/dot-select.png) 0px center no-repeat;
   }
   #issues {
     width: 100vw;
@@ -142,7 +142,7 @@ $slider-height:100vw/2.3;
   }
   #next {
     top: 0;
-    background-image: url(/images/slider/slider-next.png);
+    background-image: url(../images/slider/slider-next.png);
     margin-top: $slider-height*0.95;
   }
   #prev {

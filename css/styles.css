@@ -2421,9 +2421,9 @@ textarea {
   .slider #dates a {
     line-height: 38px;
     padding-bottom: 10px;
-    background: url(/images/slider/dot.png) 4px center no-repeat; }
+    background: url(../images/slider/dot.png) 4px center no-repeat; }
   .slider #dates .selected {
-    background: url(/images/slider/dot-select.png) 0px center no-repeat; }
+    background: url(../images/slider/dot-select.png) 0px center no-repeat; }
   .slider #issues {
     width: 100vw;
     height: 43.47826vw;
@@ -2477,7 +2477,7 @@ textarea {
     background-position: 0 0; }
   .slider #next {
     top: 0;
-    background-image: url(/images/slider/slider-next.png);
+    background-image: url(../images/slider/slider-next.png);
     margin-top: 41.30435vw; }
   .slider #prev {
     top: 0; }
@@ -2573,7 +2573,7 @@ textarea {
     .slider-h #issues li .share-icon {
       text-align: center; }
       .slider-h #issues li .share-icon:before {
-        content: url(/images/sprites/share.png);
+        content: url(../images/sprites/share.png);
         position: relative;
         top: 150px;
         left: -150px;
@@ -2618,11 +2618,11 @@ textarea {
 .slider-h #next {
   background-position: 0 +6px;
   right: 0;
-  background-image: url(/images/slider/slider-h-next.png); }
+  background-image: url(../images/slider/slider-h-next.png); }
 .slider-h #prev {
   background-position: 0 +9px;
   left: 0;
-  background-image: url(/images/slider/slider-h-next.png);
+  background-image: url(../images/slider/slider-h-next.png);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -2639,7 +2639,7 @@ textarea {
     display: none; } }
 @media (max-width: 480px) {
   .slider-h #issues li .share-icon:after {
-    content: url(/images/sprites/share-circle.png);
+    content: url(../images/sprites/share-circle.png);
     left: 33px;
     bottom: 4px;
     margin: -41px -45px;
@@ -2823,7 +2823,7 @@ figure {
       display: none; }
     .nav a#pull:after {
       content: "";
-      background: url(/images/Background/nav-icon.png) no-repeat;
+      background: url(../images/Background/nav-icon.png) no-repeat;
       width: 37px;
       height: 37px;
       display: inline-block;
@@ -2885,10 +2885,6 @@ figure {
   .about_us .btn-arrow {
     margin: 10px 0 50px 0; }
 
-.app div {
-  background: url(/images/app/portf1.png);
-  height: 200px; }
-
 .more {
   background-color: white;
   height: 178px;
@@ -2947,127 +2943,9 @@ textarea:focus {
   background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #d44178 0%, #792539 0%, black 200%);
   background-image: -ms-radial-gradient(50% 50%, circle closest-side, #d44178 0%, #792539 0%, black 200%); }
 
-.block__portfolio {
-  padding-top: 30px;
-  padding-bottom: 30px; }
-
-.block__portfolio--item {
-  overflow: hidden;
-  position: relative;
-  height: 25vh;
-  /* height: 200px;
-  width: 200px;*/
-  padding: 0;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; }
-
-.block__portfolio--item-content a, .block__portfolio--item-content a:hover {
-  color: white;
-  text-decoration: none; }
-
-@media (max-width: 375px) {
-  .block__portfolio--item {
-    height: 150px; } }
-.block__portfolio--item-hidden {
-  display: none;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; }
-
-.block__portfolio--item .block__portfolio--item-content {
-  color: #fff;
-  padding-top: 65px;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  margin-top: -5px; }
-
-@media (min-width: 992px) {
-  .block__portfolio--item:nth-child(2n) .block__portfolio--item-content {
-    float: left;
-    margin-left: 15% !important; }
-
-  .block__portfolio--item:nth-child(2n+1) .block__portfolio--item-content {
-    float: right; } }
-.block__portfolio--item h3 {
-  padding-left: 10px; }
-
-.block__portfolio--item .block__portfolio--item_link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: 0 0;
-  text-decoration: none; }
-
-.block__portfolio--item .img-back {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  /* height: 200px;
-  width: 200px;*/
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; }
-
-.block__portfolio--item:hover .img-back {
-  /* width: 250px;
-  height: 250px;*/
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -ms-filter: blur(4px);
-  -o-filter: blur(4px); }
-
-.block__portfolio--item:hover .block__portfolio--item-hidden {
-  display: block;
-  padding-left: 10px; }
-
-.block__portfolio--item:hover {
-  background-color: rgba(42, 42, 48, 0.6); }
-
-.block__portfolio--item:hover .block__portfolio--item-content {
-  padding-top: 0; }
-
-.block__portfolio--item-hidden p {
-  padding-bottom: 10px; }
-
-.block__portfolio--item-hidden .download {
-  margin-left: -40px; }
-
-.block__portfolio--item-hidden .download li {
-  /* list-style: none; */
-  padding-right: 5px;
-  /* margin-left: -45px; */
-  /* position: relative; */
-  display: inline-flex; }
-
-.block__portfolio--item-hidden .download li a:hover {
-  background-color: #ee6628;
-  border-radius: 2px; }
-
-.block__portfolio--item-hidden .download li a {
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -ms-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out; }
-
 .appstore {
   display: block;
-  background: url(/images/app/appstore-w.png) no-repeat !important;
+  background: url(../images/app/appstore-w.png) no-repeat !important;
   background-size: 100% !important;
   background-attachment: local;
   width: 146px;
@@ -3079,7 +2957,7 @@ textarea:focus {
 
 .googleplay {
   display: block;
-  background: url(/images/app/googleplay-w.png) no-repeat !important;
+  background: url(../images/app/googleplay-w.png) no-repeat !important;
   background-size: 100% !important;
   background-attachment: local;
   width: 146px;
@@ -3090,63 +2968,63 @@ textarea:focus {
     background-size: 100%; }
 
 @media (min-width: 5062px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 792.78px;
     height: 266.613px; } }
 @media (max-width: 5061px) and (min-width: 4562px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 730px;
     height: 245.5px; } }
 @media (max-width: 4561px) and (min-width: 4062px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 657px;
     height: 220.95px; } }
 @media (max-width: 4061px) and (min-width: 3562px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 584px;
     height: 196.4px; } }
 @media (max-width: 3561px) and (min-width: 3062px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 511px;
     height: 171.85px; } }
 @media (max-width: 3061px) and (min-width: 2562px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 438px;
     height: 147.3px; } }
 @media (max-width: 2561px) and (min-width: 2362px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 365px;
     height: 122.75px; } }
 @media (max-width: 2361px) and (min-width: 1962px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 335.8px;
     height: 112.93px; } }
 @media (max-width: 1961px) and (min-width: 1602px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 277.4px;
     height: 93.29px; } }
 @media (max-width: 1601px) and (min-width: 1442px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 227.76px;
     height: 76.596px; } }
 @media (max-width: 1441px) and (min-width: 1026px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 146px;
     height: 49.1px; } }
 @media (max-width: 1025px) and (min-width: 769px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 146px;
     height: 49.1px; } }
 @media (max-width: 768px) and (min-width: 469px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 255.5px;
     height: 85.925px; } }
 @media (max-width: 468px) and (min-width: 345px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 212.722px;
     height: 71.5387px; } }
 @media (max-width: 344px) {
-  .issues-content--info a {
+  .appstore, .googleplay {
     width: 194.18px;
     height: 65.303px; } }
 .btn {
@@ -3245,6 +3123,91 @@ textarea:focus {
         .dropdown-content .dropdown-elem ul li:first-child {
           padding-top: 15px; }
 
+.app-item-container .app-item {
+  height: 23.4375vw;
+  cursor: pointer;
+  float: left;
+  position: relative;
+  overflow: hidden; }
+  .app-item-container .app-item .app-item-image {
+    z-index: 1;
+    position: absolute; }
+  .app-item-container .app-item .app-item--info {
+    z-index: 100;
+    padding: 6.25vw 0 0 2.5vw;
+    position: absolute; }
+    .app-item-container .app-item .app-item--info .app-item--discr {
+      color: white;
+      padding: 1.875vw 0; }
+    .app-item-container .app-item .app-item--info .app-item--name {
+      font-size: 1em; }
+      .app-item-container .app-item .app-item--info .app-item--name h2 {
+        color: white; }
+  .app-item-container .app-item .app-item--share a {
+    opacity: 0;
+    display: inline-block; }
+  .app-item-container .app-item:hover .app-item--share a {
+    opacity: 1;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out; }
+  .app-item-container .app-item .caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+    opacity: 0; }
+  .app-item-container .app-item:hover .caption {
+    opacity: 1; }
+
+.portfolio .app-item-container .app-item .app-item-image {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease; }
+  .portfolio .app-item-container .app-item .app-item-image:hover {
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px); }
+.portfolio .app-item-container .app-item:hover .caption {
+  opacity: 0; }
+
+@media (max-width: 768px) {
+  .app-item-container:nth-child(2n-1) .app-item--info .app-item--share {
+    display: table;
+    left: 50vw;
+    top: 6.25vw;
+    position: absolute; }
+  .app-item-container .app-item {
+    padding: 0;
+    height: 46.875vw; }
+    .app-item-container .app-item:nth-child(2n) .app-item--info {
+      margin-left: 50%; }
+      .app-item-container .app-item:nth-child(2n) .app-item--info .app-item--share {
+        left: -39vw;
+        top: 6.25vw;
+        position: absolute; }
+    .app-item-container .app-item .app-item--info {
+      padding: 6.25vw 0 0 5vw; }
+      .app-item-container .app-item .app-item--info .app-item--discr {
+        padding: 3.75vw 0; } }
+@media (max-width: 575px) {
+  .app-item-container:nth-child(2n-1) .app-item--info .app-item--share {
+    display: none; }
+
+  .app-item-container .app-item:nth-child(2n) .app-item--info {
+    margin-left: 0; } }
 @font-face {
   font-family: 'DINPro';
   font-style: normal;
@@ -3254,12 +3217,6 @@ textarea:focus {
   font-family: 'DINPro-Light';
   src: url("../fonts/DINPro-Light.eot");
   src: url("../fonts/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Light.woff2") format("woff2"), url("../fonts/DINPro-Light.woff") format("woff"), url("../fonts/DINPro-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "JournalRegular";
-  src: url("journal-webfont.eot");
-  src: url("journal-webfont.eot?#iefix") format("embedded-opentype"), url("journal-webfont.woff") format("woff"), url("journal-webfont.ttf") format("truetype"), url("journal-webfont.svg#JournalRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
