@@ -2441,15 +2441,13 @@ textarea {
     height: 43.47826vw; }
   .slider #issues li h1 {
     color: white;
-    text-align: center;
-    text-shadow: #000 1px 1px 2px; }
+    text-align: center; }
   .slider #issues li p {
     position: absolute;
     width: 0;
     height: 0;
     margin: 10px 20px;
-    font-weight: normal;
-    text-shadow: #000 1px 1px 2px; }
+    font-weight: normal; }
   .slider #grad_top,
   .slider #grad_bottom {
     width: 500px;
@@ -2861,7 +2859,12 @@ figure {
   /*footer ╨▓╨╜╨╕╨╖ ╤Б╤В╤А╨░╨╜╨╕╤Ж╤Л*/ }
   .footer p.copyright {
     text-align: center;
-    color: #9e9d9d; }
+    color: #9e9d9d;
+    font-size: 1em !important; }
+  .footer p {
+    text-align: center;
+    color: #9e9d9d;
+    font-size: 1em !important; }
 
 .slider {
   padding: 0; }
@@ -2906,12 +2909,13 @@ figure {
     line-height: 1.333;
     text-align: left; }
   .contact_us a {
-    display: block; }
+    display: block;
+    padding: 2px; }
 
 .form-control {
   border: 2px solid white;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 5px 0;
   background: transparent;
   color: white;
   padding: 15px;
@@ -4144,6 +4148,48 @@ a {
 
   .form {
     margin-bottom: 2.3275em; } }
+@media (max-width: 5061px) and (min-width: 4562px) {
+  .header-margin {
+    margin-top: 292.5px; } }
+@media (max-width: 4561px) and (min-width: 4062px) {
+  .header-margin {
+    margin-top: 263.25px; } }
+@media (max-width: 4061px) and (min-width: 3562px) {
+  .header-margin {
+    margin-top: 234px; } }
+@media (max-width: 3561px) and (min-width: 3062px) {
+  .header-margin {
+    margin-top: 204.75px; } }
+@media (max-width: 3061px) and (min-width: 2562px) {
+  .header-margin {
+    margin-top: 175.5px; } }
+@media (max-width: 2561px) and (min-width: 2362px) {
+  .header-margin {
+    margin-top: 146.25px; } }
+@media (max-width: 2361px) and (min-width: 1962px) {
+  .header-margin {
+    margin-top: 134.55px; } }
+@media (max-width: 1961px) and (min-width: 1602px) {
+  .header-margin {
+    margin-top: 111.15px; } }
+@media (max-width: 1601px) and (min-width: 1442px) {
+  .header-margin {
+    margin-top: 91.26px; } }
+@media (max-width: 1441px) and (min-width: 1026px) {
+  .header-margin {
+    margin-top: 81.9px; } }
+@media (max-width: 1025px) and (min-width: 769px) {
+  .header-margin {
+    margin-top: 58.5px; } }
+@media (max-width: 768px) and (min-width: 469px) {
+  .header-margin {
+    margin-top: 102.375px; } }
+@media (max-width: 468px) and (min-width: 345px) {
+  .header-margin {
+    margin-top: 85.2345px; } }
+@media (max-width: 344px) {
+  .header-margin {
+    margin-top: 77.805px; } }
 /*
 //( max-width: 5561px) and
 @media (min-width: 5062px) {

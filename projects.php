@@ -5,10 +5,8 @@
 get_header();?>
 
  <div class="portfolio">
- <nav class="nav clearfix" style="opacity:0;">
-          <li><a>123</a></li>
-</nav>
-<section class="filter" >
+   <style>.s-h{background-image: none;}</style>
+<section class="filter header-margin" >
  <ul class="filter-list">
    <li><a class="btn btn-arrow" href="#">Все</a></li>
    <li><a class="btn btn-arrow" href="#">Android</a></li>
