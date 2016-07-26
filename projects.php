@@ -17,41 +17,47 @@ get_header();?>
 </section>
 <section class="grid app app-item-container">
       <div class="col-8-16 tab-col-16-16 mobile-col-16-16 app-item">
-        <img width="100%" height="100%" class="app-item-image" src="<?php echo get_template_directory_uri(); ?>/images/app/portf5.png"/>
+        <img width="100%" height="100%" class="app-item-image" src="<?php echo get_template_directory_uri(); ?>/images/app/portf3.png"/>
+        
         <div class="app-item--info tab-col-8-16">
+          <div class="app-item--info-container">
+          
           <a class="app-item--name" href="#"><h2 >Full Caption</h2></a>
           <p class="app-item--discr col-7-16">В нашем приложении вы найдете коллекцию из сотен лучших мультфильмов для ваших детей. </p>
           <span class="app-item--share col-16-16">
           <a href="#" class="appstore"></a>
           <a class="googleplay"></a>
           </span>
+        </div>
         </div>
 			<span class="caption">
 			</span>
-        </div>
+  </div>
         <div class="col-8-16 tab-col-16-16 mobile-col-16-16 app-item">
         <img width="100%" height="100%" class="app-item-image" src="<?php echo get_template_directory_uri(); ?>/images/app/portf4.png"/>
         <div class="app-item--info tab-col-8-16">
+          <div class="app-item--info-conteiner">
           <a class="app-item--name" href="#"><h2 >Full Caption</h2></a>
           <p class="app-item--discr col-7-16">В нашем приложении вы найдете коллекцию из сотен лучших мультфильмов для ваших детей. </p>
           <span class="app-item--share col-16-16">
           <a href="#" class="appstore"></a>
           <a class="googleplay"></a>
           </span>
-        </div>
+        </div></div>
 			<span class="caption">
 			</span>
         </div>
         <div class="col-8-16 tab-col-16-16 mobile-col-16-16 app-item">
         <img width="100%" height="100%" class="app-item-image" src="<?php echo get_template_directory_uri(); ?>/images/app/portf1.png"/>
         <div class="app-item--info tab-col-8-16">
+          <div class="app-item--info-conteiner">
           <a class="app-item--name" href="#"><h2 >Full Caption</h2></a>
           <p class="app-item--discr col-7-16">В нашем приложении вы найдете коллекцию из сотен лучших мультфильмов для ваших детей. </p>
           <span class="app-item--share col-16-16">
           <a href="#" class="appstore"></a>
           <a class="googleplay"></a>
           </span>
-        </div>
+        </div></div>
 			<span class="caption">
 			</span>
         </div>
@@ -61,6 +67,7 @@ get_header();?>
         <div class="col-8-16 tab-col-16-16 mobile-col-16-16 app-item">
         <img width="100%" height="100%" class="app-item-image" src="<?php echo get_field( "project_img_preview" );?>"/>
         <div class="app-item--info tab-col-8-16">
+          <div class="app-item--info-conteiner">
           <a class="app-item--name" href="<?php the_permalink();?>"><h2><?php the_title();?></h2></a>
           <p class="app-item--discr col-7-16"><?php echo get_field( "project_decription" );?> </p>
           <span class="app-item--share col-16-16">
@@ -76,7 +83,7 @@ get_header();?>
 		  <a href="<?php echo get_field( "project_link_winstore" );?>" class="winstore"></a>
 		<?php } ?>
           </span>
-        </div>
+        </div></div>
 			<span class="caption">
 			</span>
        

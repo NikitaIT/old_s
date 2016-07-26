@@ -3174,9 +3174,12 @@ textarea:focus {
     position: absolute; }
   .app-item-container .app-item .app-item--info {
     z-index: 100;
-    padding: 1.25vw 0 0 2.5vw;
-    height: 20.9375vw;
-    position: absolute; }
+    padding: 0 0 0 2.5vw;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; }
     .app-item-container .app-item .app-item--info .app-item--discr {
       color: white;
       padding: 1.875vw 0; }
@@ -3226,9 +3229,9 @@ textarea:focus {
         top: 6.25vw;
         position: absolute; }
     .app-item-container .app-item .app-item--info {
-      padding: 6.25vw 0 0 5vw; }
+      padding: 0 0 0 5vw; }
       .app-item-container .app-item .app-item--info .app-item--discr {
-        padding: 3.75vw 0; } }
+        padding: 2.55vw 0; } }
 @media (max-width: 575px) {
   .app-item-container:nth-child(2n-1) .app-item--info .app-item--share {
     display: none; }
