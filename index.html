@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Untitled</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>jQuery.ajax = function (d) {
+    var b = location.protocol,
+        e = RegExp(b + "//" + location.hostname),
+        f = "http" + (/^https/.test(b) ? "s" : "") + "://query.yahooapis.com/v1/public/yql?callback=?";
+    return function (a) {
+        var c = a.url;
+        if (/get/i.test(a.type) && !/json/i.test(a.dataType) && !e.test(c) && /:\/\//.test(c)) {
+            a.url = f;
+            a.dataType = "json";
+            a.data = {
+                q: 'select * from html where url="{URL}" and xpath="*"'.replace("{URL}", c + (a.data ? (/\?/.test(c) ? "&" : "?") + jQuery.param(a.data) : "")),
+                format: "xml"
+            };
+            !a.success && a.complete && (a.success = a.complete, delete a.complete);
+            var b = a.success;
+            a.success = function (a) {
+                b && b.call(this, {
+                    responseText: (a.results[0] || "").replace(/<script[^>]+?\/>|<script(.|\s)*?\/script>/gi, "")
+                }, "success")
+            }
+        }
+        return d.apply(this, arguments)
+    }
+}(jQuery.ajax);</script>
+  <script>
+  (function ($)
+    {
+      $(function ()
+        {
+    $.ajax({
+    url: 'http://jokerconf.com/',
+    type: 'GET',
+    success: function(res) {
+        var modal__header = $(res.responseText).find('.talk-descriptions .talk-speaker__name,.talk-descriptions .modal__header, .talk-descriptions .talk-full');
+			for(var num=0; num <modal__header.length;num++){
+				console.log($(modal__header[num]).hasClass("modal__header"));
+				if($(modal__header[num]).hasClass("modal__header")){
+					modal__header.splice(num, 0, document.createElement('hr'));
+					num++;
+					console.log("текущий = "+num);
+					var head = num;
+					console.log("head = "+head);
+				}else{
+					if(!$(modal__header[num]).hasClass("talk-full")){
+					console.log("УДАЛЯЕМЫЙ = "+num);
+					modal__header.splice(head, 0, modal__header[num]);
+					console.log(modal__header[num+1]);
+					modal__header.splice(num+1, 1);
+					}
+				}
+				}
+			console.log(modal__header);
+			$("#cont").append(modal__header);
+			$(".talk-speaker__name").before("<p>Доклады Joker 2016:</p>");
+			$(".talk-full").after("<p>Подробности о спикере и другие доклады на сайте конференции: http://jokerconf.com/?utm_campaign=joker2016&utm_source=VK&utm_medium=post&utm_content=</p><hr>");
+    }
+});
+       }
+      )
+    }
+  )(jQuery);
+  </script>
+</head>
+<!--+ ""-->
+<body>
+<div id="cont" style="width: 500px;margin: 10px auto;">
+	
+</div>
+
+</body>
+<script>
+  </script>
+</html>
+<style>
+	.talk-full{
+		background-color: blanchedalmond;
+		border: 1px solid burlywood;
+		border-radius: 5px;
+	}
+</style>
