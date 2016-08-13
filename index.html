@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+п»ї<!DOCTYPE HTML>
 <html>
 <head>
   <title>Untitled</title>
@@ -42,12 +42,12 @@
 				if($(modal__header[num]).hasClass("modal__header")){
 					modal__header.splice(num, 0, document.createElement('hr'));
 					num++;
-					console.log("текущий = "+num);
+					console.log("С‚РµРєСѓС‰РёР№ = "+num);
 					var head = num;
 					console.log("head = "+head);
 				}else{
 					if(!$(modal__header[num]).hasClass("talk-full")){
-					console.log("УДАЛЯЕМЫЙ = "+num);
+					console.log("РЈР”РђР›РЇР•РњР«Р™ = "+num);
 					modal__header.splice(head, 0, modal__header[num]);
 					console.log(modal__header[num+1]);
 					modal__header.splice(num+1, 1);
@@ -56,8 +56,8 @@
 				}
 			console.log(modal__header);
 			$("#cont").append(modal__header);
-			$(".talk-speaker__name").before("<p>Доклады Joker 2016:</p>");
-			$(".talk-full").after("<p>Подробности о спикере и другие доклады на сайте конференции: http://jokerconf.com/?utm_campaign=joker2016&utm_source=VK&utm_medium=post&utm_content=</p><hr>");
+			$(".talk-speaker__name").before("<p>Р”РѕРєР»Р°РґС‹ Joker 2016:</p>");
+			$(".talk-full").after("<p>РџРѕРґСЂРѕР±РЅРѕСЃС‚Рё Рѕ СЃРїРёРєРµСЂРµ Рё РґСЂСѓРіРёРµ РґРѕРєР»Р°РґС‹ РЅР° СЃР°Р№С‚Рµ РєРѕРЅС„РµСЂРµРЅС†РёРё: http://jokerconf.com/?utm_campaign=joker2016&utm_source=VK&utm_medium=post&utm_content=</p><hr>");
     }
 });
        }
