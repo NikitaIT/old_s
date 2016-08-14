@@ -58,6 +58,20 @@
 			$("#cont").append(modal__header);
 			$(".talk-speaker__name").before("<p>Доклады Joker 2016:</p>");
 			$(".talk-full").after("<p>Подробности о спикере и другие доклады на сайте конференции: http://jokerconf.com/?utm_campaign=joker2016&utm_source=VK&utm_medium=post&utm_content=</p><hr>");
+      var text_pr = $("#cont").html();
+var arr = ["Native код, Off-heap данные и Java", "Релиз-менеджмент с помощью Gradle", "Анти-введение в Big Data", "Асинхронно, но понятно: сопрограммы в Kotlin","Low Latency","Spring RabbitMQ","Путь от CRUD к Hypermedia API с Spring","HotSpot Internals: Safepoints, NullPointers and StackOverflows","Stream API: рекомендации лучших собаководов","Beating Threads — live coding music","Java libraries you can","Vert.x: Красавица и Чудовище","From Java to Assembly: Down the Rabbit Hole","Making Java more dynamic"];
+
+
+$("#button").click(function() {
+
+jQuery.each(arr, function(ind, txt) {
+    var re = new RegExp(txt,"g");
+    text_pr = text_pr.replace(re, '<span class="text_red">'+txt+'</span>');
+});
+  console.log(text_pr);
+  $('#cont').html(text_pr);
+
+});$("#button").click();
     }
 });
        }
@@ -68,8 +82,9 @@
 </head>
 <!--+ ""-->
 <body>
+  <button id="button">Выделить использованные красным? defalut: clicked</button>
 <div id="cont" style="width: 500px;margin: 10px auto;">
-	
+	1
 </div>
 
 </body>
@@ -77,6 +92,7 @@
   </script>
 </html>
 <style>
+  .text_red{color: red;}
 	.talk-full{
 		background-color: blanchedalmond;
 		border: 1px solid burlywood;
