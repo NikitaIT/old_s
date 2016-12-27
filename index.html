@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link href="css/nv.d3.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
     <script src="js/nv.d3.min.js"></script>
     <style>
@@ -27,21 +28,24 @@
     </style>
 </head>
 <body>
-<p>Обновить</p>
-<div>
-    <label>Устонавливаем амплитуда колебания(A)</label>
-    <input type="text" class="sinA" name="A"/>
+
+<div class="form-wrapper cf">
+    <p align="center"><a class="btn-zoom"/>Обновить</a></p>
 </div>
-<div>
-    <label>Устонавливаем циклическую частоту (ω)</label>
-    <input type="text" class="sinW" name="W"/>
+<div class="form-wrapper cf">
+    <input type="text" class="sinA" name="A" placeholder="Устонавливаем амплитуду колебания(A)">
+    <button type="">A</button>
 </div>
-<div>
-    <label>Устонавливаем амплитуду (φ)</label>
-    <input type="text" class="sinF" name="F"/>
+<div class="form-wrapper cf">
+    <input type="text" class="sinW" name="W" placeholder="Устонавливаем циклическую частоту (ω)">
+    <button type="">ω</button>
 </div>
-<div id="chartZoom" style="display: block;position: inherit;">
-    <a href="#" id="zoomIn">Zoom In</a> <a href="#" id="zoomOut">Zoom Out</a>
+<div class="form-wrapper cf">
+    <input type="text" class="sinF" name="F" placeholder="Устонавливаем амплитуду (φ)">
+    <button type="">φ</button>
+</div>
+<div id="chartZoom" class="form-wrapper cf" style="display: block;position: inherit;" align="center">
+    <a class="btn-zoom" id="zoomIn">Zoom In</a> <a class="btn-zoom" id="zoomOut">Zoom Out</a>
 </div>
 
 <div id="chart1" class='with-transitions'>
@@ -140,8 +144,8 @@ nv.addGraph(function() {
         //console.log({A1:A1,A2:A2,ω:ω,φ:φ});
 
   //Data is represented as an array of {x,y} pairs.
-        var sin = d3.range(0, 100).map(function(t){return {x: t, y: A1*Math.sin(Omeg*t+Fi) };});
-        var cos = d3.range(0, 100).map(function(t){return {x: t, y: A2*Math.sin(Omeg*t+Fi) };});
+        var sin = d3.range(0, 55).map(function(t){return {x: t, y: A1*Math.sin(Omeg*t+Fi) };});
+        var cos = d3.range(45, 100).map(function(t){return {x: t, y: A2*Math.sin(Omeg*t+Fi) };});
         //alert(cos);
         //alert(d3.range(0, 100).map(function(t){return {x: t, y: 1};}));
         return [
