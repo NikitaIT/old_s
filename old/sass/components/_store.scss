@@ -1,0 +1,91 @@
+$appstore-media-width:146px;
+.appstore {
+  display: block;
+  background: url(../images/app/appstore-w.png) no-repeat!important;
+  background-size: 100% !important;
+  background-attachment:local;
+  width: $appstore-media-width;
+  height: $appstore-media-width*0.35;
+  border-radius: 4px;
+  &:hover {
+    background-color: black !important;
+    background-size: 100%;
+  }
+}
+
+.googleplay {
+  display: block;
+  background: url(../images/app/googleplay-w.png) no-repeat !important;
+  background-size: 100% !important;
+  background-attachment:local;
+  width: $appstore-media-width;
+  height: $appstore-media-width*0.35;
+  border-radius: 4px;
+  &:hover {
+    background-color: black !important;
+    background-size: 100%;
+  }
+}
+//issues-store-width
+  $issues-store-width: 146px;
+  $issues-store-height: 49.1px;
+@media (min-width: 5062px) {
+  $k:5.43;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 5061px) and (min-width: 4562px){
+  $k:5;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 4561px) and (min-width: 4062px){
+  $k:4.5;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 4061px) and (min-width: 3562px){
+  $k:4;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 3561px) and (min-width: 3062px){
+  $k:3.5;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 3061px) and (min-width: 2562px){
+  $k:3;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 2561px) and (min-width: 2362px){
+  $k:2.5;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 2361px) and (min-width: 1962px){
+  $k:2.3;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 1961px) and (min-width: 1602px){
+  $k:1.9;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 1601px) and (min-width: 1442px){
+  $k:1.56;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media (max-width: 1441px) and (min-width: 1026px){
+  .appstore,.googleplay {width: $issues-store-width;height: $issues-store-height;}
+  $k:1.4;
+}
+@media( max-width: 1025px) and (min-width: 769px){
+  $k:1;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media( max-width: 768px) and (min-width: 469px){
+  $k:0.75+1;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media( max-width: 468px) and (min-width: 345px){
+  $k:0.457+1;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}
+@media( max-width: 344px) {
+  $k:0.33+1;
+  .appstore,.googleplay {width: $issues-store-width*$k;height: $issues-store-height*$k;}
+}

@@ -1,0 +1,398 @@
+/*
+  16 Grid
+  Author - Nikita Fiodorov
+*/
+
+//1600 - 100%
+//200 - края
+//1200 - контент
+//100 - слой
+.p-0{padding: 0!important;}
+.m-0{margin: 0!important;}
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  padding-right: 0px;
+  /* не менять*/
+}
+.coll-pading{
+  /* column-space */
+  padding-right: 10px;
+}
+[class*='grid'],
+[class*='col-'],
+[class*='mobile-'],
+.grid:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid {
+  width: 100%;
+  margin: 0 auto;
+  overflow: inherit;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.push-right {
+  float: right;
+}
+
+
+/* Content Columns */
+
+.col {
+  &-1-16 {
+    width: 6.25%;
+  }
+  &-2-16 {
+    width: 12.5%;
+  }
+  &-3-16 {
+    width: 18.75%;
+  }
+  &-4-16 {
+    width: 25%;
+  }
+  &-5-16 {
+    width: 31.25%;
+  }
+  &-6-16 {
+    width: 37.5%;
+  }
+  &-7-16 {
+    width: 43.75%;
+  }
+  &-8-16 {
+    width: 50%;
+  }
+  &-9-16 {
+    width: 56.25%;
+  }
+  &-10-16 {
+    width: 62.5%;
+  }
+  &-11-16 {
+    width: 68.75%;
+  }
+  &-12-16 {
+    width: 75%;
+  }
+  &-13-16 {
+    width: 81.25%;
+  }
+  &-14-16 {
+    width: 87.5%;
+  }
+  &-15-16 {
+    width: 93.75%;
+  }
+  &-16-16 {
+    width: 100%;
+  }
+}
+
+
+/* Pushing blocks */
+
+.push {
+  &-1-16 {
+    margin-left: 6.25%;
+  }
+  &-2-16 {
+    margin-left: 12.5%;
+  }
+  &-3-16 {
+    margin-left: 18.75%;
+  }
+  &-4-16 {
+    margin-left: 25%;
+  }
+  &-5-16 {
+    margin-left: 31.25%;
+  }
+  &-6-16 {
+    margin-left: 37.5%;
+  }
+  &-7-16 {
+    margin-left: 43.75%;
+  }
+  &-8-16 {
+    margin-left: 50%;
+  }
+  &-9-16 {
+    margin-left: 56.25%;
+  }
+  &-10-16 {
+    margin-left: 62.5%;
+  }
+  &-11-16 {
+    margin-left: 68.75%;
+  }
+  &-12-16 {
+    margin-left: 75%;
+  }
+  &-13-16 {
+    margin-left: 81.25%;
+  }
+  &-14-16 {
+    margin-left: 87.5%;
+  }
+  &-15-16 {
+    margin-left: 93.75%;
+  }
+  &-16-16 {
+    margin-left: 100%;
+  }
+}
+
+
+@media screen and ( max-width: 768px )
+{
+  .grid {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0px;
+    /* grid-space to left */
+    padding-right: 0px;
+    /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+  }
+  [class*='col-'] {
+    width: auto;
+    float: none;
+    margin: 0 0;
+    padding-left: 0;
+    padding-right: 0px;
+    /* column-space */
+  }
+  [class*='push-'] {
+    margin-left: auto;
+    float: none;
+    /* column-space */
+  }
+  
+  /* Mobile Layout */
+  [class*='tab-col-'] {
+    float: left;
+    padding: 15px;
+    /* column-space */
+    padding-bottom: 0;
+  }
+  .tab-col {
+    &-1-16 {
+      width: 6.25%;
+    }
+    &-2-16 {
+      width: 12.5%;
+    }
+    &-3-16 {
+      width: 18.75%;
+    }
+    &-4-16 {
+      width: 25%;
+    }
+    &-5-16 {
+      width: 31.25%;
+    }
+    &-6-16 {
+      width: 37.5%;
+    }
+    &-7-16 {
+      width: 43.75%;
+    }
+    &-8-16 {
+      width: 50%;
+    }
+    &-9-16 {
+      width: 56.25%;
+    }
+    &-10-16 {
+      width: 62.5%;
+    }
+    &-11-16 {
+      width: 68.75%;
+    }
+    &-12-16 {
+      width: 75%;
+    }
+    &-13-16 {
+      width: 81.25%;
+    }
+    &-14-16 {
+      width: 87.5%;
+    }
+    &-15-16 {
+      width: 93.75%;
+    }
+    &-16-16 {
+      width: 100%;
+    }
+  }
+  /* Pushing blocks */
+
+.t-push {
+  &-1-16 {
+    margin-left: 6.25%;
+  }
+  &-2-16 {
+    margin-left: 12.5%;
+  }
+  &-3-16 {
+    margin-left: 18.75%;
+  }
+  &-4-16 {
+    margin-left: 25%;
+  }
+  &-5-16 {
+    margin-left: 31.25%;
+  }
+  &-6-16 {
+    margin-left: 37.5%;
+  }
+  &-7-16 {
+    margin-left: 43.75%;
+  }
+  &-8-16 {
+    margin-left: 50%;
+  }
+  &-9-16 {
+    margin-left: 56.25%;
+  }
+  &-10-16 {
+    margin-left: 62.5%;
+  }
+  &-11-16 {
+    margin-left: 68.75%;
+  }
+  &-12-16 {
+    margin-left: 75%;
+  }
+  &-13-16 {
+    margin-left: 81.25%;
+  }
+  &-14-16 {
+    margin-left: 87.5%;
+  }
+  &-15-16 {
+    margin-left: 93.75%;
+  }
+  &-16-16 {
+    margin-left: 100%;
+  }
+}
+  .hide-on-tab {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+}
+@media ( max-width: 480px )
+{
+  .down{
+    position: absolute;
+    bottom: 215px;
+    left: -16px;
+    width: 87% !important;
+    margin: 35px !important;
+  }
+    .grid {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0px;
+    /* grid-space to left */
+    padding-right: 0px;
+    /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+  }
+  [class*='tab-col-'] {
+    width: auto;
+    float: none;
+    margin: 0 0;
+    padding-left: 0;
+    padding-right: 0px;
+    /* column-space */
+  }
+  [class*='t-push-'] {
+    margin-left: auto;
+    float: none;
+    /* column-space */
+  }
+  /* Mobile Layout */
+  [class*='mobile-col-'] {
+    float: none;
+    margin: 0 0 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 20px;
+    /* column-space */
+    padding-bottom: 0;
+  }
+  .mobile-col {
+    &-1-16 {
+      width: 6.25%;
+    }
+    &-2-16 {
+      width: 12.5%;
+    }
+    &-3-16 {
+      width: 18.75%;
+    }
+    &-4-16 {
+      width: 25%;
+    }
+    &-5-16 {
+      width: 31.25%;
+    }
+    &-6-16 {
+      width: 37.5%;
+    }
+    &-7-16 {
+      width: 43.75%;
+    }
+    &-8-16 {
+      width: 50%;
+    }
+    &-9-16 {
+      width: 56.25%;
+    }
+    &-10-16 {
+      width: 62.5%;
+    }
+    &-11-16 {
+      width: 68.75%;
+    }
+    &-12-16 {
+      width: 75%;
+    }
+    &-13-16 {
+      width: 81.25%;
+    }
+    &-14-16 {
+      width: 87.5%;
+    }
+    &-15-16 {
+      width: 93.75%;
+    }
+    &-16-16 {
+      width: 100%;
+      &:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    }
+  }
+  .hide-on-mobile {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+}

@@ -1,0 +1,93 @@
+/* 
+* Trendico Project
+* Project Page - http://trendico.mkoreshkov.ru
+* Author - Fiodorov Nikita
+* Site - https://new.vk.com/handlebar
+*/
+
+
+/* base.h */
+
+$footer-height:10px;
+
+/* 
+* used namespace normalize;
+* used namespace 16grid;
+*/
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  overflow: auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.centr {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%; //Растяжка на весь экран
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wrapper {
+  position: relative; //Растяжка на весь экран
+  min-height: 100%; //Растяжка на весь экран
+  background-size: cover;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 60px 0%;
+  padding-top: 0px; //для не блочного контента
+}
+
+.page-content {}//
+.padding-120{
+  padding-top: 120px !important;
+}
+figure {
+  margin: 0;
+}
+
+.inner-wrapper {
+  padding: 0 0;
+}
+
+.list-row li {
+  float: right;
+}

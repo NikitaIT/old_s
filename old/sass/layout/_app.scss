@@ -1,0 +1,54 @@
+.s-h {
+  background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(212,65,120) 0%, rgb(121,37,57) 0%, rgb(0,0,0) 200%);
+  background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(212,65,120) 0%, rgb(121,37,57) 0%, rgb(0,0,0) 200%);
+  background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(212,65,120) 0%, rgb(121,37,57) 0%, rgb(0,0,0) 200%);
+}
+
+.portfolio {
+  background-color: white;
+  .filter{
+    padding: 80px 0;
+    &-list{text-align: center;
+      li{display: inline-block;}
+      li a{
+        border-color: rgb(202, 184, 188);
+        background-color: rgba(208, 54, 92, 0);
+        display: inline-block; 
+        margin: 12px;
+        border-style: solid;
+        border-width: 0.1em;
+        border-radius: 12px;
+        color: rgb(202, 184, 188);
+        padding: 5px 10px 5px 10px;
+        &:hover {
+          border-color: rgb(238, 102, 40);
+          color: rgb(238, 102, 40);
+          text-decoration: none;
+          background-color: rgba(208, 54, 92, 0);
+        }
+        &:active {
+          border-color: rgb(238, 102, 40);
+          color: rgb(238, 102, 40);
+          text-decoration: none;
+          background-color: rgba(208, 54, 92, 0);
+        }
+      }
+    }
+  }
+  .app-item-container .app-item .app-item-image {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    &:hover{
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      filter: blur(5px);
+    }
+  }
+  .app-item-container .app-item:hover .caption {
+    opacity: 0;
+  }
+}

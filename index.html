@@ -1,101 +1,166 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Untitled</title>
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script>jQuery.ajax = function (d) {
-    var b = location.protocol,
-        e = RegExp(b + "//" + location.hostname),
-        f = "http" + (/^https/.test(b) ? "s" : "") + "://query.yahooapis.com/v1/public/yql?callback=?";
-    return function (a) {
-        var c = a.url;
-        if (/get/i.test(a.type) && !/json/i.test(a.dataType) && !e.test(c) && /:\/\//.test(c)) {
-            a.url = f;
-            a.dataType = "json";
-            a.data = {
-                q: 'select * from html where url="{URL}" and xpath="*"'.replace("{URL}", c + (a.data ? (/\?/.test(c) ? "&" : "?") + jQuery.param(a.data) : "")),
-                format: "xml"
-            };
-            !a.success && a.complete && (a.success = a.complete, delete a.complete);
-            var b = a.success;
-            a.success = function (a) {
-                b && b.call(this, {
-                    responseText: (a.results[0] || "").replace(/<script[^>]+?\/>|<script(.|\s)*?\/script>/gi, "")
-                }, "success")
-            }
+    <meta charset="utf-8">
+    <link href="css/nv.d3.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+    <script src="js/nv.d3.min.js"></script>
+    <style>
+        text {
+            font: 12px sans-serif;
         }
-        return d.apply(this, arguments)
-    }
-}(jQuery.ajax);</script>
-  <script>
-  (function ($)
-    {
-      $(function ()
-        {
-    $.ajax({
-    url: 'http://jokerconf.com/',
-    type: 'GET',
-    success: function(res) {
-        var modal__header = $(res.responseText).find('.talk-descriptions .talk-speaker__name,.talk-descriptions .modal__header, .talk-descriptions .talk-full');
-			for(var num=0; num <modal__header.length;num++){
-				console.log($(modal__header[num]).hasClass("modal__header"));
-				if($(modal__header[num]).hasClass("modal__header")){
-					modal__header.splice(num, 0, document.createElement('hr'));
-					num++;
-					console.log("текущий = "+num);
-					var head = num;
-					console.log("head = "+head);
-				}else{
-					if(!$(modal__header[num]).hasClass("talk-full")){
-					console.log("УДАЛЯЕМЫЙ = "+num);
-					modal__header.splice(head, 0, modal__header[num]);
-					console.log(modal__header[num+1]);
-					modal__header.splice(num+1, 1);
-					}
-				}
-				}
-			console.log(modal__header);
-			$("#cont").append(modal__header);
-			$(".talk-speaker__name").before("<p>Доклады Joker 2016:</p>");
-			$(".talk-full").after("<p>Подробности о спикере и другие доклады на сайте конференции: http://jokerconf.com/?utm_campaign=joker2016&utm_source=VK&utm_medium=post&utm_content=</p><hr>");
-      var text_pr = $("#cont").html();
-var arr = ["Оптимизация: не всё то золото","Native код, Off-heap данные и Java", "Релиз-менеджмент с помощью Gradle", "Анти-введение в Big Data", "Асинхронно, но понятно: сопрограммы в Kotlin","Low Latency","Spring RabbitMQ","Путь от CRUD к Hypermedia API с Spring","HotSpot Internals: Safepoints, NullPointers and StackOverflows","Stream API: рекомендации лучших собаководов","Beating Threads — live coding music","Java libraries you can","Vert.x: Красавица и Чудовище","From Java to Assembly: Down the Rabbit Hole","Making Java more dynamic","Talk About Invokedynamic","Pragmatic Performance","Современный Java Stack с Bootique.io без контейнеров, регистрации и смс","Apache Cayenne: альтернатива в мире Java ORM","Griffon:","Байткод для любознательных","Эффективная работа","с IDE(A)","Java на Эльбрусе","Groovy Puzzlers S03 — Грувить так Грувить!","Мавен против Грейдла: На заре автоматизации","Мифы о Spark, или Может ли пользоваться Spark обычный Java-разработчик","Как посчитать CTR 100М объектов в реальном времени и не умереть","СУБД: индивидуальный пошив и подгонка по фигуре","Как мы делали высокодоступную платформу или практические приемы использования in-memory grids","Введение в распределенные системы для очень занятого джависта","Верхом на реактивных стримах","Gradle 3.0 and beyond","To be reactive... or not to be","Are you aware of /bin of your JDK?","Жизненный цикл JIT кода","Почему функциональное программирование так важно (для датамайнера)?","Computer Science еще жива","Будьте готовы к G1 GC, или Эволюция G1 GC","Мифы и факты о медленной Java","Advanced search for your legacy application","От любви до ненависти — один шаг","Тонкости реализации шаблона Service Discovery на примере SpringCloud","Микросервисы: первая кровь","Перформанс: Что В Имени Тебе Моём?","Близкие Контакты JMM-степени","Сломай логи","Java 9 Modularity in Action","Understanding Hardware Transactional Memory","Tracing distributed services: experiences with implementing APM for the JVM"];
-
-
-$("#button").click(function() {
-
-jQuery.each(arr, function(ind, txt) {
-    var re = new RegExp(txt,"g");
-    text_pr = text_pr.replace(re, '<span class="text_red">'+txt+'</span>');
-});
-  console.log(text_pr);
-  $('#cont').html(text_pr);
-
-});$("#button").click();
-    }
-});
-       }
-      )
-    }
-  )(jQuery);
-  </script>
+        svg {
+            display: block;
+        }
+        html, body, #chart1, svg {
+            background: #f8f8f8 ;
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            width: 100%;
+        }
+        #chartZoom {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
 </head>
-<!--+ ""-->
 <body>
-  <button id="button">Выделить использованные красным? defalut: clicked</button>
-<div id="cont" style="width: 500px;margin: 10px auto;">
-	1
+<p>Обновить</p>
+<div>
+    <label>Устонавливаем амплитуда колебания(A)</label>
+    <input type="text" class="sinA" name="A"/>
+</div>
+<div>
+    <label>Устонавливаем циклическую частоту (ω)</label>
+    <input type="text" class="sinW" name="W"/>
+</div>
+<div>
+    <label>Устонавливаем амплитуду (φ)</label>
+    <input type="text" class="sinF" name="F"/>
+</div>
+<div id="chartZoom" style="display: block;position: inherit;">
+    <a href="#" id="zoomIn">Zoom In</a> <a href="#" id="zoomOut">Zoom Out</a>
 </div>
 
-</body>
+<div id="chart1" class='with-transitions'>
+    <svg></svg>
+</div>
+
 <script>
-  </script>
+nv.addGraph(function() {
+        var chart = nv.models.lineChart()
+            .noData("There is no Data to display")
+            .useInteractiveGuideline(true);// Мы хотим, чтобы приятные глазу всплывающие подсказки и руководство!
+        var fitScreen = false;
+        var width = 600;
+        var height = 300;
+        var zoom = 1;
+
+        chart.xAxis.tickFormat(d3.format(',r'));// Диаграмма на оси х
+        chart.yAxis.axisLabel('Voltage (v)').tickFormat(d3.format(',.2f'));// Диаграмма на оси y
+        
+        var dataset = sinAndCos();
+        //Create SVG element
+        var svgAttr = { perserveAspectRatio: 'xMinYMid',
+                        width: width,
+                        height: height}
+        var svg = d3.select('#chart1 svg')
+                    .attr(svgAttr)
+                    .datum(dataset); //Данные
+
+        setChartViewBox();
+        resizeChart();
+        nv.utils.windowResize(resizeChart);
+        chart.lines.dispatch.on("elementClick", function(evt) {console.log(evt);});
+        d3.select('#zoomIn').on('click', zoomIn);
+        d3.select('#zoomOut').on('click', zoomOut);
+        sinA = d3.select('.sinA').on('change',update);
+        sinW = d3.select('.sinW').on('change',update);
+        sinF = d3.select('.sinF').on('change',update);
+        d3.select("p").on("click",update);
+        function update() {
+            
+            valueA1 = d3.select('.sinA')[0][0].value;
+            valueA2 = d3.select('.sinA')[0][0].value;
+            valueW = d3.select('.sinW')[0][0].value;
+            valueF = d3.select('.sinF')[0][0].value;
+            console.log({Q:valueA1,W:.5,E:valueW,R:valueF});
+            var dataset = sinAndCos(parseFloat(valueA1),.5,parseFloat(valueW),parseFloat(valueF));
+            // Update the SVG with the new data and call chart
+            svg.datum(dataset).transition().duration(500).call(chart);
+            nv.utils.windowResize(chart.update);
+        };
+        function setChartViewBox() {
+            var w = width * zoom,
+                h = height * zoom;
+            chart
+                .width(w)
+                .height(h);
+            svg
+                .attr('viewBox', '0 0 ' + w + ' ' + h)
+                .transition().duration(500)// скорость отрисовки кружков на линии под курсором
+                .call(chart); // отрисовываем 
+        }
+
+        function zoomOut() {
+            zoom += .25;
+            setChartViewBox();
+        }
+
+        function zoomIn() {
+            if (zoom <= .5) return;
+            zoom -= .25;
+            setChartViewBox();
+        }
+       // Это изменение размера просто устанавливает размеры в SVG, в без необходимости напоминать код диаграммы
+        // Изменение размеров из-за окна видимости и настройки perserveAspectRatio
+        // Это масштабирует интерьер диаграммы в отличие от выше
+        function resizeChart() {
+            var container = d3.select('#chart1');
+            var svg = container.select('svg');
+
+            if (fitScreen) {
+                // resize based on container's width AND HEIGHT
+                var windowSize = nv.utils.windowSize();
+                svg.attr("width", windowSize.width);
+                svg.attr("height", windowSize.height);
+            } else {
+                // resize based on container's width
+                var aspect = chart.width() / chart.height();
+                var targetWidth = parseInt(container.style('width'));
+                svg.attr("width", targetWidth);
+                svg.attr("height", Math.round(targetWidth / aspect));
+            }
+        }
+        return chart;
+    });
+    
+    function sinAndCos(A1 = 1,A2 = .5,ω = 0.1,φ = 0) {
+        console.log({A1:A1,A2:A2,ω:ω,φ:φ});
+        var sin = d3.range(0, 100).map(function(t){return {x: t, y: A1*Math.sin(ω*t+φ) };});
+        var cos = d3.range(0, 100).map(function(t){return {x: t, y: A2*Math.cos(ω*t+φ) };});
+        return [
+            {
+                values: sin,
+                key: "Sine Wave",
+                color: "#ff7f0e"
+            },
+            {
+                values: cos,
+                key: "Cosine Wave",
+                color: "#2ca02c"
+            }
+        ];
+    }
+// .attr({
+//         x: function(d, i) { return i * (w / dataset.length); },
+//         y: function(d) { return h - (d * 4); },
+//         width: w / dataset.length - barPadding,
+//         height: function(d) { return d * 4; },
+//         fill: function(d) { return "rgb(0, 0, " + (d * 10) + ")"; }
+//    });
+</script>
+</body>
 </html>
-<style>
-  .text_red{color: red;}
-	.talk-full{
-		background-color: blanchedalmond;
-		border: 1px solid burlywood;
-		border-radius: 5px;
-	}
-</style>

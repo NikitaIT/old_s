@@ -1,0 +1,148 @@
+$padding-in-nav:30px;
+.header {
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.349);
+  height: 0px; //обязательно
+  /*header вверх страницы*/
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  //height: $header-height; не стоит
+  /*header вверх страницы*/
+  &-logo {
+    padding: $padding-in-nav - 7px;
+  }
+  .grid {
+    padding-top: 5px !important;
+  }
+  .col-1-1 {
+    margin-top: 0px !important;
+  }
+  .right li {
+    padding-top: 5px;
+    font-size: 0.8em;
+    line-height: 1.2;
+    text-align: left;
+  }
+}
+
+.nav {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  /*left:50%; 
+  margin-left: -270px;
+  width: 540px;
+   Центрирование*/
+  text-align: center;
+  ul {
+    margin: 0 auto;
+    height: 100%;
+  }
+  li {
+    display: inline-block;
+    padding: $padding-in-nav;
+  }
+  &-right li {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #c8c7c7;
+    border-radius: 100%;
+    padding: 5px;
+    margin: $padding-in-nav+-10px 2px;
+  }
+  a {
+    color: rgb(200, 199, 199);
+    text-transform: uppercase;
+    line-height: 1.2;
+    &:hover {
+      color: rgb(238, 102, 40);
+    }
+    &:active {
+      color: rgb(238, 102, 40);
+    }
+    &#pull {
+      display: none;
+    }
+  }
+}
+
+@media (max-width:1160px) {
+  .nav {
+    &-right {
+      width: 25% !important; //col-4-16
+    }
+    .push-2-16 {
+      margin-left: 0; // del
+      width: 25%;
+    }
+  }
+}
+@media (max-width:900px) {
+  nav .share{display: none;}
+  nav li.centr{padding: 30px 15px;}
+}
+@media (max-width:860px) {
+  .nav .hide-on-mobile {
+    display: none;
+  }
+  .nav .col-8-16 {
+    width: 75%;
+  }
+  .nav li {
+    display: inline-block;
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    border-bottom: 0;
+    ul {
+      display: none;
+      height: auto;
+    }
+    a#pull {
+      display: block !important;
+      width: 100%;
+      padding: 20px 0 20px 0;
+      position: relative;
+    }
+    .header-logo {
+      display: none;
+    }
+    a#pull:after {
+      content: "";
+      background: url(../images/Background/nav-icon.png) no-repeat;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    li {
+      display: block;
+      float: none;
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+      padding-left: 50%;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .nav {
+    a#pull {
+      height: 20px;
+      img {
+        width: 70%;
+        float: left;
+      }
+    }
+  }
+}

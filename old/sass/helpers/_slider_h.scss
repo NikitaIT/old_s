@@ -1,0 +1,211 @@
+.slider-h {
+  .col-16-16 {
+    padding: 0 !important;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    //    -webkit-transition: 0.5s;
+    //    -moz-transition: 0.5s;
+    //    -o-transition: 0.5s;
+    //    -ms-transition: 0.5s;
+    //    transition: 0.5s;
+  }
+  a:hover,
+  a.selected {
+    border-color: rgb(238, 102, 40);
+    color: rgb(238, 102, 40);
+    text-decoration: none;
+    background: none;
+  }
+  .sociales {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #timeline {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+  }
+  #dates {
+    margin: 100px 0;
+    height: 40px;
+    overflow: hidden;
+  }
+  #dates li {
+    list-style: none;
+    float: left;
+    //    width: 200px;//длинна кнопки с отступом
+    height: 400px;//скрытие элементов
+    text-align: center;
+  }
+  #dates a {
+    margin: 10px;
+    line-height: 38px;
+    padding-bottom: 10px;
+    border-width: 0.1em;
+  }
+  #issues {
+    width: 100vw;
+    overflow: hidden;
+    li {
+      width: 100vw;
+      list-style: none;
+      float: left;
+      .appstore,.googleplay {
+        margin: 10px auto;
+      }
+      h2 {
+        font-family: "Lato";
+        color: rgb(255, 255, 255);
+        line-height: 1.333;
+        text-align: left;
+        letter-spacing: 1px;
+      }
+      p {
+        color: rgb(202, 184, 188);
+        text-align: left;
+      }
+      .li {
+        padding: 10px;
+        padding-left: 25px;
+        &:before {
+          content: "\2022";
+          padding-right: 10px;
+        }
+      }
+      img {
+        float: left;
+        background: transparent;
+        zoom: 1;
+        width:100%;
+      }
+      .btn-arrow {
+        margin: 40px 0 20px 0;
+        width: 100% //          телефон
+        //          position: absolute;
+        //          bottom: 0;
+      }
+      .share-icon {
+        text-align: center;
+        &:before {
+          content: url(../images/sprites/share.png);
+          position: relative;
+          top: 150px;
+          left: -150px;
+          z-index: 0;
+        }
+        div {
+          width: 25px;
+          height: 25px;
+          border: 2px solid #c8c7c7;
+          border-radius: 100%;
+          padding: 5px;
+          line-height: 1.2;
+          float: left;
+          margin: 2px;
+          a {
+            &:hover {
+              color: rgb(238, 102, 40);
+            }
+            &:active {
+              color: rgb(238, 102, 40);
+            }
+          }
+        }
+      }
+    }
+  }
+  #grad_left,
+  #grad_right {
+    width: 100px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+  }
+  #grad_left {
+    left: 0;
+    background: url('../images/grad_left.png') repeat-y;
+  }
+  #grad_right {
+    right: 0;
+    background: url('../images/grad_right.png') repeat-y;
+  }
+  #next,
+  #prev {
+    position: absolute;
+    top: 0;
+    font-size: 70px;
+    top: 50px;
+    width: 22px;
+    height: 38px;
+    zoom:1.8;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+  #next:hover,
+  #prev:hover {
+  }
+  #next {
+    background-position: 0 +6px;
+    right: 0;
+    background-image: url(../images/slider/slider-h-next.png);
+  }
+  #prev {
+    background-position: 0 +9px;
+    left: 0;
+    background-image: url(../images/slider/slider-h-next.png);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  #next.disabled,
+  #prev.disabled {
+    opacity: 0.2;
+  }
+}
+@media(max-width:768px){
+.slider-h{
+  .issues-description{
+    padding-bottom: 20px;
+  }
+  .share-icon {
+        display: none;
+  }
+}
+}
+@media(max-width:480px){
+  .slider-h #issues li .share-icon:after {
+    content: url(../images/sprites/share-circle.png);
+    left: 33px;
+    bottom: 4px;
+    margin: -41px -45px;
+    position: absolute;
+  }
+  .slider-h #issues li .share-icon:before {
+    content: none;
+  }
+  .slider-h #issues li{
+    p.issues-description {
+      padding-bottom: 290px;
+    }
+    .share-icon {
+      display:block;
+          position: absolute;
+      
+          bottom: 57px;
+          left: 50vw;
+          margin-left: -83px;
+//      &:before {
+//        content: url(../images/sprites/share-circle.png);
+//        top: 163px;
+//    left: -79px;
+//      }
+    }
+  }
+}
