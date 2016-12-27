@@ -61,7 +61,7 @@ nv.addGraph(function() {
         chart.xAxis.tickFormat(d3.format(',r'));// Диаграмма на оси х
         chart.yAxis.axisLabel('Voltage (v)').tickFormat(d3.format(',.2f'));// Диаграмма на оси y
         
-        var dataset = sinAndCos();
+        var dataset =[];// sinAndCos();
         //Create SVG element
         var svgAttr = { perserveAspectRatio: 'xMinYMid',
                         width: width,
@@ -137,23 +137,23 @@ nv.addGraph(function() {
         return chart;
     });
     
-    function sinAndCos(A1 = 1,A2 = .5,ω = 0.1,φ = 0) {
-        console.log({A1:A1,A2:A2,ω:ω,φ:φ});
-        var sin = d3.range(0, 100).map(function(t){return {x: t, y: A1*Math.sin(ω*t+φ) };});
-        var cos = d3.range(0, 100).map(function(t){return {x: t, y: A2*Math.cos(ω*t+φ) };});
-        return [
-            {
-                values: sin,
-                key: "Sine Wave",
-                color: "#ff7f0e"
-            },
-            {
-                values: cos,
-                key: "Cosine Wave",
-                color: "#2ca02c"
-            }
-        ];
-    }
+    // function sinAndCos(A1 = 1,A2 = .5,ω = 0.1,φ = 0) {
+    //     //console.log({A1:A1,A2:A2,ω:ω,φ:φ});
+    //     var sin = d3.range(0, 100).map(function(t){return {x: t, y: A1*Math.sin(ω*t+φ) };});
+    //     var cos = d3.range(0, 100).map(function(t){return {x: t, y: A2*Math.cos(ω*t+φ) };});
+    //     return [
+    //         {
+    //             values: sin,
+    //             key: "Sine Wave",
+    //             color: "#ff7f0e"
+    //         },
+    //         {
+    //             values: cos,
+    //             key: "Cosine Wave",
+    //             color: "#2ca02c"
+    //         }
+    //     ];
+    // }
 // .attr({
 //         x: function(d, i) { return i * (w / dataset.length); },
 //         y: function(d) { return h - (d * 4); },
