@@ -167,8 +167,7 @@ nv.addGraph(function() {
 //     }
 //   ];
 // }
-    function sinAndCos() {
-        //A1 = 1,A2 = .5,ω = 0.1,φ = 0
+    function sinAndCos(A1 = 1,A2 = .5,ω = 0.1,φ = 0) {
         //console.log({A1:A1,A2:A2,ω:ω,φ:φ});
         
         var sin = [],sin2 = [],
@@ -179,11 +178,11 @@ nv.addGraph(function() {
     cos.push({x: i, y: .5 * Math.cos(i/10)});
   }
   //Data is represented as an array of {x,y} pairs.
-  //A1*Math.sin(ω*t+φ)
+  //
         //var sin = d3.range(0, 100).map(function(t){return {x: t, y: t+1 };});
         //var cos = d3.range(0, 100).map(function(t){return {x: t, y: t+1 };});
         //alert(cos);
-        alert(d3.range(0, 100).map(function(t){return {x: t, y: t+1 };}));
+        alert(d3.range(0, 100).map(function(t){return {x: t, y: A1*Math.sin(ω*t+φ)};}));
         return [
             {
                 values: sin,
