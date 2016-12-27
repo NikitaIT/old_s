@@ -174,13 +174,10 @@ nv.addGraph(function() {
       cos = [];
 
   //Data is represented as an array of {x,y} pairs.
-  for (var i = 0; i < 100; i++) {
-    sin.push({x: i, y:  A1*Math.sin(ω*i+φ)});
-    cos.push({x: i, y:  A1*Math.sin(ω*i+φ)});
-  }
-        //var sin = d3.range(0, 100).map(function(t){return {x: t, y: A1*Math.sin(ω*t+φ) };});
-        //var cos = d3.range(0, 100).map(function(t){return {x: t, y: A2*Math.cos(ω*t+φ) };});
-        alert(cos);
+  //A1*Math.sin(ω*t+φ)
+        var sin = d3.range(0, 100).map(function(t){return {x: t, y: t+1 };});
+        var cos = d3.range(0, 100).map(function(t){return {x: t, y: t+1 };});
+        //alert(cos);
         //alert(d3.range(0, 100));
         return [
             {
