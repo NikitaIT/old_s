@@ -76,22 +76,22 @@ nv.addGraph(function() {
         chart.lines.dispatch.on("elementClick", function(evt) {console.log(evt);});
         d3.select('#zoomIn').on('click', zoomIn);
         d3.select('#zoomOut').on('click', zoomOut);
-        sinA = d3.select('.sinA').on('change',update);
-        sinW = d3.select('.sinW').on('change',update);
-        sinF = d3.select('.sinF').on('change',update);
-        d3.select("p").on("click",update);
-        function update() {
+        // sinA = d3.select('.sinA').on('change',update);
+        // sinW = d3.select('.sinW').on('change',update);
+        // sinF = d3.select('.sinF').on('change',update);
+        // d3.select("p").on("click",update);
+        // function update() {
             
-            valueA1 = d3.select('.sinA')[0][0].value;
-            valueA2 = d3.select('.sinA')[0][0].value;
-            valueW = d3.select('.sinW')[0][0].value;
-            valueF = d3.select('.sinF')[0][0].value;
-            console.log({Q:valueA1,W:.5,E:valueW,R:valueF});
-            var dataset = sinAndCos(parseFloat(valueA1),.5,parseFloat(valueW),parseFloat(valueF));
-            // Update the SVG with the new data and call chart
-            svg.datum(dataset).transition().duration(500).call(chart);
-            nv.utils.windowResize(chart.update);
-        };
+        //     valueA1 = d3.select('.sinA')[0][0].value;
+        //     valueA2 = d3.select('.sinA')[0][0].value;
+        //     valueW = d3.select('.sinW')[0][0].value;
+        //     valueF = d3.select('.sinF')[0][0].value;
+        //     console.log({Q:valueA1,W:.5,E:valueW,R:valueF});
+        //     var dataset = sinAndCos(parseFloat(valueA1),.5,parseFloat(valueW),parseFloat(valueF));
+        //     // Update the SVG with the new data and call chart
+        //     svg.datum(dataset).transition().duration(500).call(chart);
+        //     nv.utils.windowResize(chart.update);
+        // };
         function setChartViewBox() {
             var w = width * zoom,
                 h = height * zoom;
