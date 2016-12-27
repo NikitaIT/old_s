@@ -183,7 +183,7 @@ nv.addGraph(function() {
         //var sin = d3.range(0, 100).map(function(t){return {x: t, y: t+1 };});
         //var cos = d3.range(0, 100).map(function(t){return {x: t, y: t+1 };});
         //alert(cos);
-        alert(d3.range(0, 100));
+        alert(d3.range(0, 100).map(function(t){return {x: t, y: t+1 };}));
         return [
             {
                 values: sin,
