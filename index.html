@@ -81,8 +81,7 @@ nv.addGraph(function() {
         sinF = d3.select('.sinF').on('change',update);
         d3.select("p").on("click",update);
         function update() {
-            alert("valueA1");
-            alert(valueA1);
+            alert("1");
             valueA1 = d3.select('.sinA')[0][0].value;
             valueA2 = d3.select('.sinA')[0][0].value;
             valueW = d3.select('.sinW')[0][0].value;
@@ -90,7 +89,7 @@ nv.addGraph(function() {
             //console.log({Q:valueA1,W:.5,E:valueW,R:valueF});
             var dataset = sinAndCos(parseFloat(valueA1),.5,parseFloat(valueW),parseFloat(valueF));
             // Update the SVG with the new data and call chart
-            svg.datum(dataset).transition().duration(500).call(chart);
+            svg.datum(dataset).call(chart);
             nv.utils.windowResize(chart.update);
         };
         function setChartViewBox() {
