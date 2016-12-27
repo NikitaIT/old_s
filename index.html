@@ -179,9 +179,9 @@ nv.addGraph(function() {
   //   cos.push({x: i, y: .5 * Math.cos(i/10)});
   // }
   //Data is represented as an array of {x,y} pairs.
-  //A1*Math.sin(ω*t+φ)
-        var sin = d3.range(0, 100).map(function(t){return {x: t, y: t+1 };});
-        var cos = d3.range(0, 100).map(function(t){return {x: t, y: t+1 };});
+  //
+        var sin = d3.range(0, 100).map(function(t){return {x: t, y: 1*Math.sin(0.1*t+1) };});
+        var cos = d3.range(0, 100).map(function(t){return {x: t, y: 1*Math.sin(0.1*t+1) };});
         //alert(cos);
         //alert(d3.range(0, 100).map(function(t){return {x: t, y: 1};}));
         return [
