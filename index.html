@@ -89,7 +89,7 @@ nv.addGraph(function() {
             //console.log({Q:valueA1,W:.5,E:valueW,R:valueF});
             var dataset = sinAndCos(parseFloat(valueA1),.5,parseFloat(valueW),parseFloat(valueF));
             // Update the SVG with the new data and call chart
-            svg.datum(dataset).call(chart);
+            svg.datum(dataset).transition().call(chart);
             nv.utils.windowResize(chart.update);
         };
         function setChartViewBox() {
