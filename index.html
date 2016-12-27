@@ -61,7 +61,7 @@ nv.addGraph(function() {
         chart.xAxis.tickFormat(d3.format(',r'));// Диаграмма на оси х
         chart.yAxis.axisLabel('Voltage (v)').tickFormat(d3.format(',.2f'));// Диаграмма на оси y
         
-        var dataset = sinAndCos();
+        var dataset = sinAndCos(1,0.5,0.1,0);
         //Create SVG element
         var svgAttr = { perserveAspectRatio: 'xMinYMid',
                         width: width,
@@ -167,11 +167,7 @@ nv.addGraph(function() {
 //     }
 //   ];
 // }
-    function sinAndCos() {
-        var A1 = 1;
-        var A2 = 0.5;
-        var Omeg = 0.1;
-        var Fi = 0
+    function sinAndCos(A1,A2,Omeg,Fi) {
         //console.log({A1:A1,A2:A2,ω:ω,φ:φ});
         
   //       var sin = [],sin2 = [],
