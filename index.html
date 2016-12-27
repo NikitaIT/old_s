@@ -61,7 +61,7 @@ nv.addGraph(function() {
         chart.xAxis.tickFormat(d3.format(',r'));// Диаграмма на оси х
         chart.yAxis.axisLabel('Voltage (v)').tickFormat(d3.format(',.2f'));// Диаграмма на оси y
         
-        var dataset =[];// sinAndCos();
+        var dataset = sinAndCos();
         //Create SVG element
         var svgAttr = { perserveAspectRatio: 'xMinYMid',
                         width: width,
@@ -136,7 +136,37 @@ nv.addGraph(function() {
         }
         return chart;
     });
-    
+    function sinAndCos() {
+  var sin = [],sin2 = [],
+      cos = [];
+
+  //Data is represented as an array of {x,y} pairs.
+  for (var i = 0; i < 100; i++) {
+    sin.push({x: i, y: Math.sin(i/10)});
+    sin2.push({x: i, y: Math.sin(i/10) *0.25 + 0.5});
+    cos.push({x: i, y: .5 * Math.cos(i/10)});
+  }
+
+  //Line chart data should be sent as an array of series objects.
+  return [
+    {
+      values: sin,      //values - represents the array of {x,y} data points
+      key: 'Sine Wave', //key  - the name of the series.
+      color: '#ff7f0e'  //color - optional: choose your own line color.
+    },
+    {
+      values: cos,
+      key: 'Cosine Wave',
+      color: '#2ca02c'
+    },
+    {
+      values: sin2,
+      key: 'Another sine wave',
+      color: '#7777ff',
+      area: true      //area - set to true if you want this line to turn into a filled area chart.
+    }
+  ];
+}
     // function sinAndCos(A1 = 1,A2 = .5,ω = 0.1,φ = 0) {
     //     //console.log({A1:A1,A2:A2,ω:ω,φ:φ});
     //     var sin = d3.range(0, 100).map(function(t){return {x: t, y: A1*Math.sin(ω*t+φ) };});
